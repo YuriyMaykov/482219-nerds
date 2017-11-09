@@ -3,62 +3,90 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/index_style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
+      <div class="logo">
+        <a href=""><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="100" height="50"></a>
+      </div>
       <nav class = "main-navigaion">
-        <img src="img/index-logo.png" alt="Логотип лизайн-студии Нёрдс" width="150" height="50">
         <ul class="sait-navigation">
           <li><a href="studi-info.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacrts.html">Контакты</a></li>
         </ul>
-        <ul class="sait-navigation">
-            <li><a href="basket.html">Корзина</a></li>
-          </ul>
+        <div class="basket">
+          <a href="basket.html"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+        </div>
       </nav>
-      <section class="about-services">
-        <b class="about-name">Долго, дорого, скурпулезно.</b>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a class="buton-red" href="#xxx">Узнать больше</a>
+        <!-- ??? организация слайдера ??? -->
+        <section class="slider">
+        <div class="slide-1">
+          <b class="about-name">Долго, дорого, скурпулезно.</b>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a class="buton-red" href="">Узнать больше</a>
+          <img src="img/slide1-8bit.png" alt="Слайд 1">
+        </div>
+        <div class="slide-2">
+          <b class="about-name">Любим математику как никто другой.</b>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a class="buton-red" href="">Узнать больше</a>
+          <img src="img/slide2-8bit.png" alt="Слайд 2">
+        </div>
+        <div class="slide-3">
+          <b class="about-name">Только ночь, только хардкор.</b>
+          <p>Работать днем, как все ? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a class="buton-red" href="">Узнать больше</a>
+          <img src="img/slide3-8bit.png" alt="Слайд 3">
+        </div>
+        <!-- ??? точки слайдов ??? -->
       </section>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Дизайн - студия Нёрдс</h1>
+
       <section class="order-apps">
         <h2 class="visually-hidden">Направления в разработке</h2>
         <div class="block-1">
-          <h3>ВЕБ-САЙТЫ</h3>
+          <!-- Фоновый рисунок -->
+          <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-          <a class="buton-red" href="catalog.html">ЗАКАЗАТЬ</a>
+          <a class="buton-red" href="catalog.html">Заказать</a>
         </div>
         <div class="block-2">
-          <h3>ПРИЛОЖЕНИЯ</h3>
+          <!-- Фоновый рисунок -->
+          <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="buton-green" href="#order">ЗАКАЗАТЬ</a>
+          <a class="buton-green" href="">Заказать</a>
         </div>
         <div class="block-3">
-          <h3>ПРЕЗЕНТАЦИИ</h3>
-          <p>Выдаже не подозреваете, насколько вы изумительны!</p>
-          <a class="buton-yellow" href="#order">ЗАКАЗАТЬ</a>
+          <!-- Фоновый рисунок -->
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="buton-yellow" href="">Заказать</a>
         </div>
-        <hr>
+        <div class="horisont-line" ></div>
       </section>
+
       <section class="principles">
         <h2 class="visually-hidden">Наши принципы работы</h2>
+
         <section class="principles-left">
           <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <h3>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
+          <h3>Выполняем заказы на разработку:</h3>
           <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для IOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </section>
+
         <section  class="principles-right">
-          <h3>с 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h3>
+          <!-- Фоновый рисунок -->
+          <h3>с 2004 года любим точность во всем:</h3>
           <ul>
             <li>
               <div>
@@ -81,23 +109,52 @@
           </ul>
         </section>
       </section>
+
       <section class="partners">
-        <hr>
-        <a href="https://htmlacademy.ru/">
-          <img src="htmlacademy.png" alt="HTML academy">
-        </a>
-        <a href="#borodinski">
-          <img src="borodinski.png" alt="Barbeshop BORODINSKI">
-        </a>
-        <a href="#pink">
-          <img src="pink.png" alt="PINK">
-        </a>
-        <a href="#mishka">
-          <img src="mishka.png" alt="MISHKA">
-        </a>
-        <hr>
+        <div class="horisont-line" ></div>
+
+        <ul>
+          <li>
+            <a href="https://htmlacademy.ru/">
+              <img src="img/logo-1.png" alt="HTML academy">
+            </a>
+          </li>
+          <li>
+            <svg width="4" height="40">
+              <line x1="50%" y1="50%0" x2="50%" y2="100%" stroke="#eeeeee" stroke-width="2"/>
+            </svg>
+          </li>
+          <li>
+            <a #borod href="#borod">
+              <img src="img/logo-2.png" alt="Barbeshop BORODINSKI">
+            </a>
+          </li>
+          <li>
+            <svg width="4" height="40">
+              <line x1="50%" y1="50%0" x2="50%" y2="100%" stroke="#eeeeee" stroke-width="2"/>
+            </svg>
+          </li>
+          <li>
+            <a #pink href="#pink">
+              <img src="img/logo-3.png" alt="PINK">
+            </a>
+          </li>
+          <li>
+            <svg width="4" height="40">
+              <line x1="50%" y1="50%0" x2="50%" y2="100%" stroke="#eeeeee" stroke-width="2"/>
+            </svg>
+          </li>
+          <li>
+            <a #mishka href="#mishka">
+              <img src="img/logo-4.png" alt="MISHKA">
+            </a>
+          </li>
+        </ul>
+        
+        <div class="horisont-line"></div>
       </section>
     </main>
+
     <footer class="main-footer">
         <section class="kontakts">
           <div class="kontakts-adres">
@@ -107,20 +164,22 @@
               <br>
               тел. +7(812)275-75-75
             </p>
-            <a class="buton-red" href="#xxx">НАПИШИТЕ НАМ</a>
+            <a class="buton-red" href="#xxx">Напишите нам</a>
           </div>
+          <!-- Фон карта и точка адреса -->
+
         </section>
         <section>
           <div class="footer-social">
             <ul>
               <li>
-                <a class="social-button" href="#">В контакте</a>
+                <a class="social-button" href="#"><img src="img/vk-1.png" alt="В контакте"></a>
               </li>
               <li>
-                <a class="social-button" href="#">Инстаграм</a>
+                <a class="social-button" href="#"><img src="img/fb 1.png" alt="Фэйсбук"></a>
               </li>
               <li>
-                <a class="social-button" href="#">Еще какая то соцсеть</a>
+                <a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a>
               </li>
             </ul>
           </div>
