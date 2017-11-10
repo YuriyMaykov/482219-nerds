@@ -32,11 +32,11 @@ html,body {
     color: black;
 }
 
-.partners ul {
+.partners ul, .footer-social ul{
     list-style: none;
 }
     
-.partners li {
+.partners li, .footer-social li {
     display: inline-block;
     margin-right: 1em;
 }

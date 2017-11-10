@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс - Каталог</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header">  <!--Шапка-->
       <div class="logo">
         <a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="100" height="50"></a>
       </div>
@@ -22,35 +22,49 @@
       </nav>
       <h1>Магазин готовых шаблонов</h1>
     </header>
-    <main>
-      <section class="filter">
-        <div class="price">
-          <h3>Стоимость:</h3>
+    <main class="container">  <!--Контент-->
 
-        </div>
-        <div>
-          <h3>Сетка:</h3>
-
-        </div>
-        <div>
-          <h3>Особенности:</h3>
-
-        </div>
-        <a class="button-filter" href="#">Показать</a>
+      <section class="filters">  <!--Форма фильтра-->
+        <h2 class="visually-hidden">Фильтр продуктов</h2>
+        <!-- Здесь будет форма -->
       </section>
-      <section class="slaider">
-        <h3>Сортировть:</h3>
+
+      <section class="orderby"> <!--Секция меню сортировки-->
+        <h2>Сортировть:</h2>
         <ul>
           <li>По цене</li>
           <li>По типу</li>
           <li>По названию</li>
-          <li><img src="img/icon-down-dir.svg" alt="А-Я"></li>
-          <li><img src="img/icon-up-dir.svg" alt="Я-А"></li>
+          <li><img src="img/icon-down-dir.svg" alt="По возрастанию"></li>
+          <li><img src="img/icon-up-dir.svg" alt="По убыванию"></li>
         </ul>
-
       </section>
 
+      <section class="catalog"> <!--Секция каталога шаблонов-->
+        <h2 class="visually-hidden">Список шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+              <a href="#">
+                <span class="catalog-item-title">«Sedona»</span>
+                <span class="catalog-category">Информационный сайт для туристов</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="#">
+                <img src="img/img-sedona.jpg" width="360" height="640" alt="«Sedona». Информационный сайт для туристов">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <a class="button" href="#"><b>9 900 ₽</b><span class="visually-hidden">Купить</span></a>
+            </p>
+          </li>
+
+
+        </ul>
+      </section>
     </main>
+
     <footer class="main-footer">
       <section class="kontakts">
         <div class="kontakts-adres">
@@ -62,18 +76,20 @@
           </p>
           <a class="buton-red" href="#xxx">Напишите нам</a>
         </div>
+        <!-- Фон карта и точка адреса -->
+
       </section>
       <section>
         <div class="footer-social">
           <ul>
             <li>
-              <a class="social-button" href="#">В контакте</a>
+              <a #vk class="social-button" href="#vk"><img src="img/vk-1.png" alt="В контакте"></a>
             </li>
             <li>
-              <a class="social-button" href="#">Фэйсбук</a>
+              <a #fb class="social-button" href="#fb"><img src="img/fb-1.png" alt="Фэйсбук"></a>
             </li>
             <li>
-              <a class="social-button" href="#">Инстаграм</a>
+              <a #ig class="social-button" href="#ig"><img src="img/ig-1.png" alt="Инстаграм"></a>
             </li>
           </ul>
         </div>
