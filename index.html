@@ -7,22 +7,26 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="logo">
-        <a href=""><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="100" height="50"></a>
-      </div>
-      <nav class = "main-navigaion">
-        <ul class="sait-navigation">
-          <li><a href="studi-info.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacrts.html">Контакты</a></li>
-        </ul>
-        <div class="basket">
-          <a href="basket.html"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+      <section class="top-menu">
+        <div class="logo">
+          <a href=""><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="100" height="50"></a>
         </div>
-      </nav>
-        <!-- ??? организация слайдера ??? -->
-        <section class="slider">
+
+        <nav class = "main-navigaion">
+          <ul class="sait-navigation">
+            <li><a href="studi-info.html">Студия</a></li>
+            <li><a href="clients.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacrts.html">Контакты</a></li>
+          </ul>
+          <div class="basket">
+            <a href="basket.html"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+          </div>
+        </nav>
+      </section>
+      
+      <!-- ??? организация слайдера ??? -->
+      <section class="slider">
         <div class="slide-1">
           <b class="about-name">Долго, дорого, скурпулезно.</b>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -164,10 +168,10 @@
               <br>
               тел. +7(812)275-75-75
             </p>
-            <a class="buton-red" href="#xxx">Напишите нам</a>
+            <a class="buton-red" href="#form-contact-us">Напишите нам</a>
           </div>
-          <!-- Фон карта и точка адреса -->
-
+          <div><!-- Фон карта и точка адреса в CSS --></div>
+          
         </section>
         <section>
           <div class="footer-social">
@@ -187,5 +191,30 @@
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
     </footer>
+
+    <!-- форма обратной связи -->
+    <form #form-contact-us name="contact-us" action="\echo" method="POST">
+      <h2>Напишите нам</h2>
+      <label>Ваше имя:<br>
+          <input type="text" name="Your-name" id="name-f" placeholder="Представьтесь, пожалуйста." size="50" required>
+      </label>
+      <br>
+      <label>Ваш e-mail:<br>
+        <input type="email" name="Your-email" id="email-f" placeholder="Для отправки ответа." required>
+      </label>
+      <br>
+      <label>Текст письма:<br>
+        <textarea cols="100%" rows="3" name="text-email" id="textemail-f" placeholder="В свободной форме." required></textarea>
+      </label>
+      <br>
+      <button type="submit">Отправить</button>
+      <br>
+      <button class="close-svg" type="button" name="close-contact-us" style="border: none;" >
+        <svg width="21" height="21" viewBox="0 0 21 21">
+          <path fill="rgba(251, 86, 90, 0.3)" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
+        </svg>
+      </button>
+
+    </form>
   </body>
 </html>
