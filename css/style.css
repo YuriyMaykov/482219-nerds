@@ -1,60 +1,94 @@
-html,body {
+body {
     margin: 0;
     padding: 0;
-    display: inline;
-}
-
-.logo{
-    position: relative;
-    top: 49px;
-    left: 140px;
-    height: 160px;
-    width: 65px;
-
-}
-
-.main-navigaion ul {
-    position: relative;
-    left: 202px;
-    top: 19px;
-    list-style: none;
-}
-
-.basket a {
-    position: relative;
-    margin-left: 1000px;
-}
-
-.main-navigaion li {
-    display: inline-block;
-    margin-right: 1em;
-}
-
-.main-navigaion a {
-    font-family: Arial, 'Roboto Medium';
+  
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
-    color: black;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: transparent;
 }
 
-.partners ul, .footer-social ul{
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-family: 'Roboto Medium', 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    background-color: transparent;
+}
+
+/* Динамика логотипа */
+.logo :hover ,.logo :focus {
+    opacity: 0.8;
+}
+.logo :active {
+    opacity: 0.3;
+}
+/***********************************/
+
+
+/* Динамика меню навигации и корзины */
+.saite-navigation {
     list-style: none;
 }
-    
-.partners li, .footer-social li {
-    display: inline-block;
-    margin-right: 1em;
+
+.saite-navigation a,
+.basket a {
+    color: #000000;
 }
 
-.horisont-line{
-    height: 0px; 
-    width: 100%; 
-    border-top: 2px solid #eeeeee; 
-    padding: 0";
+.saite-navigation a:hover,
+.basket a:hover, 
+.saite-navigation a:focus,
+.basket a:focus 
+{
+    color:#fb565a;
 }
 
-.close-svg:hover svg{
-    width:40;
-    height:40;
-    fill:rgba(251, 86, 90, 1);
+.saite-navigation a:active,
+.basket a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+/***********************************/
+
+.basket img {
+    margin-right: 25px;
+}
+
+.slider b {
+    font-family: 'Roboto Medium', 'Roboto', Arial, sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    color: #000000;
+    background-color: transparent;
+}
+.slider p {
+    font-family: 'Roboto Regular', 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    background-color: transparent;
+}
+
+.btn-slider {
+    display: flex;
+    width: 240px;
+    height: 50px;
+    align-self: auto;
+}
+
+.btn-slider a {
+    font-family: 'Roboto Medium', 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #fb565a;
 }
 
