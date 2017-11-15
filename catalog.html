@@ -26,7 +26,58 @@
 
       <section class="filters">  <!--Форма фильтра-->
         <h2 class="visually-hidden">Фильтр продуктов</h2>
-        <!-- Здесь будет форма -->
+        <form action="\echo" method="post"> <!-- форма фильтрации -->
+          <h3>Стоимость:</h3>
+          <input type="range" name="price-begin" min="0" max="15000" value="0">
+          <input type="range" name="price-end" min="0" max="15000" value="15000">
+          <label>От<input type="number" min="0" max="15000" step="100" value="0"></label>
+          <label>До<input type="number" min="0" max="15000" step="100" value="15000"></label>
+          
+          <h3>Сетка:</h3>
+          <label>
+            <input type="radio" name="grid" value="1" checked>
+            Адаптивная
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="grid" value="2">
+            Фиксированная
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="grid" value="3">
+            Резиновая
+          </label>
+          <br>
+
+          <h3>Особенности:</h3>
+          <label>
+            <input type="checkbox" name="chb1" checked>
+            Слайдер
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="chb2">
+            Блок преимуществ
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="chb3" checked>
+            Новости
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="chb4">
+            Галерея
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="chb5">
+            Корзина
+          </label>
+          <br>
+          <button type="submit" name="btn-fltr">Показать</button>
+        </form>
       </section>
 
       <section class="orderby"> <!--Секция меню сортировки-->
