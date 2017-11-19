@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:700&amp;subset=cyrillic" rel="stylesheet">    
+     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -16,40 +16,43 @@
 
         <nav class = "main-navigaion">
           <ul class="saite-navigation">
-            <li><a href="studi-info.html">Студия</a></li>
-            <li><a href="clients.html">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="contacrts.html">Контакты</a></li>
+            <li><a #menu1 href="#menu1">Студия</a></li>
+            <li><a #menu2 href="#menu2">Клиенты</a></li>
+            <li><a #menu3 href="catalog.html">Магазин</a></li>
+            <li><a #menu4 href="#menu4">Контакты</a></li>
           </ul>
           <div class="basket">
-            <a href="basket.html"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+            <a #bskt href="#bskt"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
           </div>
         </nav>
       </section>
       
       <!-- ??? организация слайдера ??? -->
       <section class="slider">
+
         <div class="slide-1">
           <b>Долго, дорого, скурпулезно.</b>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <div class="btn-slider">
-            <a href="">Узнать больше</a>
-          </div>
+          <a #sld1 class="button btn-red" href="#sld1">Узнать больше</a>
           <img src="img/slide1-8bit.png" alt="Слайд 1">
         </div>
+
         <div class="slide-2">
-          <b class="about-name">Любим математику как никто другой.</b>
+          <b>Любим математику как никто другой.</b>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="btn-slider" href="">Узнать больше</a>
+          <a #sld2 class="button btn-red" href="#sld2">Узнать больше</a>
           <img src="img/slide2-8bit.png" alt="Слайд 2">
         </div>
+
         <div class="slide-3">
-          <b class="about-name">Только ночь, только хардкор.</b>
+          <b>Только ночь, только хардкор.</b>
           <p>Работать днем, как все ? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="btn-slider" href="">Узнать больше</a>
+          <a #sld3 class="button btn-red" href="#sld3">Узнать больше</a>
           <img src="img/slide3-8bit.png" alt="Слайд 3">
         </div>
+
         <!-- ??? точки слайдов ??? -->
+
       </section>
     </header>
     <main class="container">
@@ -61,19 +64,19 @@
           <img src="img/illustration-1.png" alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-          <a class="buton-red" href="catalog.html">Заказать</a>
+          <a class="button btn-red" href="catalog.html">Заказать</a>
         </div>
         <div class="block-2">
           <img src="img/illustration-2.png" alt="Приложения">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="buton-green" href="">Заказать</a>
+          <a #apps2 class="button btn-green" href="#apps2">Заказать</a>
         </div>
         <div class="block-3">
           <img src="img/illustration-3.png" alt="Презентации">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="buton-yellow" href="">Заказать</a>
+          <a #apps3 class="button btn-yellow" href="#apps3">Заказать</a>
         </div>
         <div class="horisont-line" ></div>
       </section>
@@ -93,112 +96,109 @@
         </section>
 
         <section  class="principles-right">
-          <!-- Фоновый рисунок -->
+          <div class="nerds-illustr"></div>
           <h3>с 2004 года любим точность во всем:</h3>
-          <ul>
-            <li>
-              <div>
-                <p>146%</p>
-                <p>Уровень самоотдачи</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <p>100%</p>
-                <p>Соблюдение сроков</p>
-                </div>
-            </li>
-            <li>
-              <div>
-                <p>50%</p>
-                <p>Минимальная предоплата</p>
-              </div>
-            </li>
-          </ul>
+          <div>
+              <ul class="row1">
+                <li>146<span>%</span></li>
+                <li>100<span>%</span></li>
+                <li>50<span>%</span></li>
+              </ul>
+              <ul class="row2">
+                <li>Уровень самоотдачи</li>
+                <li>Соблюдение сроков</li>
+                <li>Минимальная предоплата</li>
+              </ul>
+          </div>
         </section>
       </section>
 
       <section class="brends">
         <div class="horisont-line" ></div>
-
         <ul>
           <li>
-            <a href="https://htmlacademy.ru/">
-              <img src="img/logo-1.png" alt="HTML academy">
+            <a href="https://htmlacademy.ru/" target="_blank">
+              <!-- <img class="picture" src="img/logo-1.png" alt="HTML academy"> -->
+              <div class="logo1 logo-animation"></div>
             </a>
           </li>
           <li>
-            <svg width="4" height="40">
-              <line x1="50%" y1="50%0" x2="50%" y2="100%" stroke="#eeeeee" stroke-width="2"/>
-            </svg>
+            <div class="line-separator"></div>
           </li>
           <li>
             <a #borod href="#borod">
-              <img src="img/logo-2.png" alt="Barbeshop BORODINSKI">
+              <!-- <img src="img/logo-2.png" alt="Barbeshop BORODINSKI"> -->
+              <div class="logo2 logo-animation"></div>
             </a>
           </li>
           <li>
-            <svg width="4" height="40">
-              <line x1="50%" y1="50%0" x2="50%" y2="100%" stroke="#eeeeee" stroke-width="2"/>
-            </svg>
-          </li>
+              <div class="line-separator"></div>
+            </li>
           <li>
             <a #pink href="#pink">
-              <img src="img/logo-3.png" alt="PINK">
+              <!-- <img src="img/logo-3.png" alt="PINK"> -->
+              <div class="logo3 logo-animation"></div>
             </a>
           </li>
           <li>
-            <svg width="4" height="40">
-              <line x1="50%" y1="50%0" x2="50%" y2="100%" stroke="#eeeeee" stroke-width="2"/>
-            </svg>
-          </li>
+              <div class="line-separator"></div>
+            </li>
           <li>
             <a #mishka href="#mishka">
-              <img src="img/logo-4.png" alt="MISHKA">
+              <!-- <img src="img/logo-4.png" alt="MISHKA"> -->
+              <div class="logo4 logo-animation"></div>
             </a>
           </li>
         </ul>
         
         <div class="horisont-line"></div>
+        <br>
       </section>
     </main>
 
     <footer class="main-footer">
-        <section class="kontakts">
-          <img src="img/map.jpg" alt="адрес на карте">
-          <div class="kontakts-adres">
-            <h3>NЁRDS DESING STUDIO</h3><br>
-            <p>192186, Санкт-Петербург,<br>
-              ул. Б. Конюшенная, д. 19/8<br>
-              <br>
-              тел. +7(812)275-75-75
-            </p>
-            <a class="buton-red" href="#form-contact-us">Напишите нам</a>
-          </div>
-          <!-- <div><!-- Фон карта и точка адреса в CSS --></div> -->
-          
-        </section>
-        <section>
-          <div class="footer-social">
-            <ul>
-              <li>
-                <a #vk class="social-button" href="#vk"><img src="img/vk-1.png" alt="В контакте"></a>
-              </li>
-              <li>
-                <a #fb class="social-button" href="#fb"><img src="img/fb-1.png" alt="Фэйсбук"></a>
-              </li>
-              <li>
-                <a #ig class="social-button" href="#ig"><img src="img/ig-1.png" alt="Инстаграм"></a>
-              </li>
-            </ul>
-          </div>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
+
+      <section class="kontakts">
+        <img src="img/map.jpg" alt="адрес на карте">
+        <div class="kontakts-adres">
+          <h3>NЁRDS DESING STUDIO</h3><br>
+          <p>192186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8<br>
+            <br>
+            тел. +7(812)275-75-75
+          </p>
+          <a class="button btn-red" href="#form-contact-us">Напишите нам</a>
+        </div>
+      </section>
+
+      <section class="footer-social">
+        <div class="social-link">
+          <ul>
+            <li>
+              <a #vk href="#vk"><img src="img/vk-1.png">
+                <div class="vk"></div>
+              </a>
+            </li>
+            <li>
+              <a #fb href="#fb"><img src="img/fb-1.png">
+                <div class="fb"></div>
+              </a>
+            </li>
+            <li>
+              <a #ig href="#ig"><img src="img/ig-1.png">
+                <div class="ig"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+
     </footer>
 
     <!-- форма обратной связи -->
-    <form #form-contact-us name="contact-us" action="\echo" method="POST">
+    <form class="contact-us" #form-contact-us name="contact-us" action="\echo" method="POST">
       <h2>Напишите нам</h2>
       <label>Ваше имя:<br>
           <input type="text" name="Your-name" id="name-f" placeholder="Представьтесь, пожалуйста." size="50" required>
@@ -212,13 +212,9 @@
         <textarea cols="100%" rows="3" name="text-email" id="textemail-f" placeholder="В свободной форме." required></textarea>
       </label>
       <br>
-      <button type="submit">Отправить</button>
+      <button type="submit" class="button btn-red">Отправить</button>
       <br>
-      <button class="close-svg" type="button" name="close-contact-us" style="border: none;" >
-        <svg width="21" height="21" viewBox="0 0 21 21">
-          <path fill="rgba(251, 86, 90, 0.3)" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/>
-        </svg>
-      </button>
+      <button class="close-contact-us" type="button" name="close-contact-us"></button>
 
     </form>
   </body>

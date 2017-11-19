@@ -2,10 +2,10 @@ body {
     margin: 0;
     padding: 0;
   
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: normal;
     color: #000000;
     text-transform: uppercase;
     background-color: transparent;
@@ -15,27 +15,66 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
+.saite-navigation li 
+{
+    display: inline;
+    margin-left: 50px;
+}
+
+.principles-right li {
+    display: inline;
+    margin-left: 50px;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.button {
+        font: "Roboto Medium", "Roboto", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        vertical-align: middle;
+        color: #ffffff;
+        background-color: #fb565a;
+        border: none;
+        border-radius: 0;
+}
+    
+.btn-green {
+    background-color: #00ca74;
+}
+
+.btn-yellow {
+    background-color: #efc84a;
+}
+
+.main-header {
+    background-color: #eeeeee;
+}
+
 .main-navigation {
-    font-family: 'Roboto Medium', 'Roboto', Arial, sans-serif;
+    font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 30px;
     color: #000000;
     background-color: transparent;
 }
 
-/* Динамика логотипа */
-.logo :hover ,.logo :focus {
+/* Динамика логотипа ссылок и кнопок */
+.logo:hover ,
+.logo:focus 
+{
     opacity: 0.8;
 }
-.logo :active {
+
+.logo:active {
     opacity: 0.3;
-}
-/***********************************/
-
-
-/* Динамика меню навигации и корзины */
-.saite-navigation {
-    list-style: none;
 }
 
 .saite-navigation a,
@@ -56,39 +95,340 @@ a {
     color: #000000;
     opacity: 0.3;
 }
+
+.btn-red:hover , 
+.btn-red:focus  
+{
+    background-color: #e74246;
+}
+
+.btn-red:active
+{
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-green:hover , 
+.btn-green:focus  
+{
+    background-color: #00bc6c;
+}
+
+.btn-green:active
+{
+    background-color: #00aa62;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-yellow:hover , 
+.btn-yellow:focus  
+{
+    background-color: #eab534;
+}
+
+.btn-yellow:active
+{
+    background-color: #e5a722;
+    color: rgba(255, 255, 255, 0.3);
+}
 /***********************************/
+
 
 .basket img {
     margin-right: 25px;
 }
 
 .slider b {
-    font-family: 'Roboto Medium', 'Roboto', Arial, sans-serif;
+    font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
     font-size: 55px;
     line-height: 55px;
     color: #000000;
     background-color: transparent;
 }
 .slider p {
-    font-family: 'Roboto Regular', 'Roboto', Arial, sans-serif;
+    font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    background-color: transparent;
+    text-transform: none;
+}
+
+.order-apps h3 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    background-color: transparent;
+}
+
+.order-apps p,
+.principles p,
+.row2
+{
+    font-family: "Roboto Regular", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    background-color: transparent;
+    text-transform: none;
+}
+
+.row1 li {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 15px;
+    color: #000000;
+    background-color: transparent;
+}
+
+.row1 span {
+    font-size: 22.5px;
+    line-height: 0px;
+    vertical-align: top;
+}
+
+.principles-right div {
+    display: table;
+}
+
+.principles-right ul {
+    display: table-row;     
+}
+
+.principles-right li {
+    display: table-cell;
+    padding: 12px;
+    width: 97px;
+}
+
+.principles h2 {
+    font-family: "Roboto Medium", Arial, sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+    background-color: transparent;
+}
+
+.principles h3 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
     background-color: transparent;
 }
 
-.btn-slider {
-    display: flex;
-    width: 240px;
-    height: 50px;
-    align-self: auto;
+.principles-left li {
+    list-style-image: url('../img/marker.svg');
 }
 
-.btn-slider a {
-    font-family: 'Roboto Medium', 'Roboto', Arial, sans-serif;
+.nerds-illustr {
+    width: 360px;
+    height: 208px;
+    background-image: url("..//img/nerds-illustration.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #ffffff;
+}
+
+.horisont-line{
+    height: 0px; 
+    width: 100%; 
+    border-top: 2px solid #000000; 
+    opacity: 0.2;
+    padding: 0";
+}
+
+.logo1 {
+    width: 200px;
+    height: 180px;
+    background: url("../img/logo-1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.2;
+}
+.logo2 {
+    width: 200px;
+    height: 180px;
+    background: url("../img/logo-2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.2;
+}
+.logo3 {
+    width: 200px;
+    height: 180px;
+    background: url("../img/logo-3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.2;
+}
+.logo4 {
+    width: 200px;
+    height: 180px;
+    background: url("../img/logo-4.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.2;
+}
+
+.logo-animation:hover,
+.logo-animation:focus 
+{
+    opacity: 1;
+}
+
+.logo-animation:active {
+    opacity: 0.1;
+}
+
+.line-separator {
+    width: 4px;
+    height: 180px;
+    background: url("../img/vertical-separator.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.2;
+}
+
+.brends li {
+    display: inline-block;
+}
+
+.kontakts h3 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    background-color: transparent;
+}
+
+.kontakts p {
+    font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #666666;
+    background-color: transparent;
+    text-transform: none;
+}
+
+.footer-social p:nth-of-type(1) {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    background-color: transparent;
+    text-transform: none;
+}
+
+.footer-social p:nth-of-type(2) {
+    font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #444444;
+    background-color: transparent;
+    text-transform: none;
+}
+
+.vk {
+    width: 79px;
+    height: 79px;
+    background: url("../img/sn-vk-1.png");
+}
+.vk:hover {
+    background: url("../img/sn-vk-2.png");
+}
+.vk:active {
+    background: url("../img/sn-vk-3.png");
+}
+
+.fb {
+    width: 79px;
+    height: 79px;
+    background: url("../img/sn-fb-1.png");
+}
+.fb:hover {
+    background: url("../img/sn-fb-2.png");
+}
+.fb:active {
+    background: url("../img/sn-fb-3.png");
+}
+
+.ig {
+    width: 79px;
+    height: 79px;
+    background: url("../img/sn-ig-1.png");
+}
+.ig:hover {
+    background: url("../img/sn-ig-2.png");
+}
+.ig:active {
+    background: url("../img/sn-ig-3.png");
+}
+
+.social-link li {
+    display: inline-block
+}
+
+.contact-us h2 {
+    font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+    color: #000000;
+    background-color: transparent;
+    text-transform: none;
+}
+
+.contact-us label {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
     font-size: 16px;
     line-height: 18px;
-    color: #ffffff;
-    background-color: #fb565a;
+    color: #000000;
+    background-color: transparent;
+    text-transform: none;
 }
+
+.contact-us input,
+.contact-us textarea
+{
+    width: 360px;
+    height: 50px;
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+    font-family: "Roboto Regular", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+    background-color: transparent;
+    text-transform: none;
+}
+.contact-us textarea
+{
+    width: 760px;
+    height: 118px;
+}
+
+.close-contact-us {
+    width: 21px;
+    height: 21px;
+    border: none;
+    background: url("../img/close-cross.svg");
+    opacity: 0.3;
+}
+.close-contact-us:hover, 
+.close-contact-us:focus 
+{
+    opacity: 1;
+}    
+.close-contact-us:active {
+    opacity: 0.1;
+}    
+
+
 
