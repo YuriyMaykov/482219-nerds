@@ -19,6 +19,16 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font: "Roboto Medium", "Roboto", Arial, sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    background-color: transparent;
+}
+
 .saite-navigation li 
 {
     display: inline;
@@ -35,6 +45,10 @@ ul {
 }
 
 .button {
+        width: 240px;
+        height: 50px;
+        display: inline-block;
+
         font: "Roboto Medium", "Roboto", Arial, sans-serif;
         font-size: 16px;
         line-height: 18px;
@@ -43,9 +57,27 @@ ul {
         color: #ffffff;
         background-color: #fb565a;
         border: none;
-        border-radius: 0;
+        border-radius: 4px;
 }
-    
+
+.order-apps .button {
+    width: 160px;
+}
+
+.kontakts .button {
+    width: 219px;
+}
+
+.contact-us .button {
+    width: 260px;
+}
+
+.filter-form .button {
+    width: 260px;
+    color: #000000;
+    background-color: #eeeeee;
+}
+
 .btn-green {
     background-color: #00ca74;
 }
@@ -430,5 +462,209 @@ ul {
     opacity: 0.1;
 }    
 
+/**catalog***************************/
+/*фильтр*****************************/
+.filter-form fieldset {
+    border: none;
+}
+
+.filter-form legend {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    background-color: transparent;
+}
+
+.price-flt legend {
+    letter-spacing: 0.1rem;
+}
+
+.price-flt input,
+.price-flt label 
+{
+    font-family: "Roboto Regular", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
+}
+
+.price-flt input {
+    background-color: #eeeeee;
+    border: none;
+}
+
+.range-price {
+    display: block;
+    width: 261px;
+    height: 81px;
+    background-color: #eeeeee;
+}
+
+.range-price input[type=range] {
+    width: 200px;
+}
+.price-flt input[name=price-end] {
+    margin-left: -194px;
+}
+
+.price-flt label:nth-of-type(2) {
+    margin-left: 33px;
+}
+
+.price-flt input[type=number] {
+    width: 80px;
+    height: 38px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.grid-flt .label,
+.features-flt .label {
+    display: inline;
+    font-family: "Roboto Regular", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+    text-transform: none;
+}
+
+.grid-flt input,
+.features-flt input
+{
+    display: none;
+}
+
+.custom-chb {
+    position: relative;
+    width: 27px;
+    height: 23px;
+    background: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    opacity: 0.4;
+}
+
+.custom-chb,
+.custom-radio,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox:checked + .custom-chb {
+    background: url("../img/checkbox-on.svg");
+}
+
+.custom-chb:hover,
+.custom-radio:hover {
+    opacity: 1;
+}
+
+/* чет не работает */
+.radio:disabled + .label,
+.checkbox:disabled + .label 
+{
+    opacity: 0.1;
+}/* чет не работает */
+
+.radio:disabled + .custom-radio,
+.checkbox:disabled + .custom-chb 
+{
+    opacity: 0.1;
+}
+
+.custom-radio {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.4;
+}
+
+.radio:checked + .custom-radio {
+    background: url("../img/radio-on.svg");
+}
+
+.filter-form .button:hover {
+    background-color: #dfdfdf;
+}
+
+.filter-form .button:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-image: url("../img/grey-btn-clic.png");
+}
+/*****************************фильтр*/
+/*сортировка*************************/
+.orderby h2,
+.orderby ul,
+.orderby ul li
+{
+    display: inline-block;
+}
+.orderby h2 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    background-color: transparent;
+}
+
+.orderby a {
+    font-family: "Roboto Regular", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    background-color: transparent;
+    opacity: 0.3;
+}
+
+.orderby a:hover {
+    opacity: 0.6;
+}
+
+.orderby a:active,
+.orderby a:focus {
+    opacity: 1;
+}
+
+
+    
+/*************************сортировка*/
+/*каталог****************************/
+.catalog-item .catalog-item-title {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    background-color: transparent;
+}
+
+.catalog-item .catalog-category {
+    font-family: "Roboto Regular", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+    background-color: transparent;
+    text-transform: none;
+}
+
+.page-number a {
+    font-family: "Roboto Medium", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    background-color: #eeeeee;
+  
+}
+
+
+/****************************каталог*/
 
 

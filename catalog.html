@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="main-header">  <!--Шапка-->
       <div class="logo">
         <a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="100" height="50"></a>
@@ -25,78 +26,99 @@
       </nav>
       <h1>Магазин готовых шаблонов</h1>
     </header>
+
     <main class="container">  <!--Контент-->
 
       <section class="filters">  <!--Форма фильтра-->
-        <h2 class="visually-hidden">Фильтр продуктов</h2>
-        <form action="\echo" method="post"> <!-- форма фильтрации -->
-          <h3>Стоимость:</h3>
-          <input type="range" name="price-begin" min="0" max="15000" value="0">
-          <input type="range" name="price-end" min="0" max="15000" value="15000">
-          <label>От<input type="number" min="0" max="15000" step="100" value="0"></label>
-          <label>До<input type="number" min="0" max="15000" step="100" value="15000"></label>
-          
-          <h3>Сетка:</h3>
-          <label>
-            <input type="radio" name="grid" value="1" checked>
-            Адаптивная
-          </label>
-          <br>
-          <label>
-            <input type="radio" name="grid" value="2">
-            Фиксированная
-          </label>
-          <br>
-          <label>
-            <input type="radio" name="grid" value="3">
-            Резиновая
-          </label>
-          <br>
+        <h2 class="visually-hidden">Фильтр списка каталога продуктов</h2>
+        <form action="\echo" method="post" class="filter-form"> <!-- форма фильтрации -->
 
-          <h3>Особенности:</h3>
-          <label>
-            <input type="checkbox" name="chb1" checked>
-            Слайдер
-          </label>
+          <fieldset class="price-flt">
+            <legend>Стоимость:</legend>
+            <div class="range-price">
+              <input type="range" name="price-begin" min="0" max="15000" value="0">
+              <input type="range" name="price-end" min="0" max="15000" value="15000">
+            </div>
+            <br>
+            <label>От<input type="number" min="0" max="15000" step="100" value="0"></label>
+            <label>До<input type="number" min="0" max="15000" step="100" value="15000"></label>
+          </fieldset>
+
+          <fieldset class="grid-flt">
+            <legend>Сетка:</legend>
+            <label>
+              <input class="radio" type="radio" name="radio-grid" value="1">
+              <span class="custom-radio"></span>
+              <span class="label">Адаптивная</span>
+            </label>
+            <br>
+            <label>
+              <input class="radio" type="radio" name="radio-grid" value="2">
+              <span class="custom-radio"></span>
+              <span class="label">Фиксированная</span>
+            </label>
+            <br>
+            <label>
+              <input class="radio" type="radio" name="radio-grid" value="3">
+              <span class="custom-radio"></span>
+              <span class="label">Резиновая</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="features-flt">
+            <legend>Особенности:</legend>
+            <label>
+              <input class="checkbox" type="checkbox" name="chb1" disabled>
+              <span class="custom-chb"></span>
+              <span class="label">Слайдер</span>
+            </label>
+            <br>
+            <label>
+              <input class="checkbox" type="checkbox" name="chb2">
+              <span class="custom-chb"></span>
+              <span class="label">Блок преимуществ</span>
+            </label>
+            <br>
+            <label>
+              <input class="checkbox" type="checkbox" name="chb3">
+              <span class="custom-chb"></span>
+              <span class="label">Новости</span>
+            </label>
+            <br>
+            <label>
+              <input class="checkbox" type="checkbox" name="chb4">
+              <span class="custom-chb"></span>
+              <span class="label">Галерея</span>
+            </label>
+            <br>
+            <label>
+              <input class="checkbox" type="checkbox" name="chb5">
+              <span class="custom-chb"></span>
+              <span class="label">Корзина</span>
+            </label>
+          </fieldset>
           <br>
-          <label>
-            <input type="checkbox" name="chb2">
-            Блок преимуществ
-          </label>
-          <br>
-          <label>
-            <input type="checkbox" name="chb3" checked>
-            Новости
-          </label>
-          <br>
-          <label>
-            <input type="checkbox" name="chb4">
-            Галерея
-          </label>
-          <br>
-          <label>
-            <input type="checkbox" name="chb5">
-            Корзина
-          </label>
-          <br>
-          <button type="submit" name="btn-fltr">Показать</button>
+          <!-- <button type="submit" class="button" name="btn-fltr">Показать</button> -->
+          <button type="button" class="button" name="btn-fltr">Показать</button>
         </form>
       </section>
 
+      <!-- лучше наверное будет переделать на радиокнопки, что бы видеть чекед -->
       <section class="orderby"> <!--Секция меню сортировки-->
         <h2>Сортировть:</h2>
         <ul>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По названию</li>
-          <li><img src="img/icon-down-dir.svg" alt="По возрастанию"></li>
-          <li><img src="img/icon-up-dir.svg" alt="По убыванию"></li>
+          <li><a #sort-price href="#sort-price">По цене</a></li>
+          <li><a #sort-type href="#sort-type">По типу</a></li>
+          <li><a #sort-name href="#sort-name">По названию</a></li>
+          <li><a #sort-down href="#sort-down"><img src="img/icon-down-dir.svg" alt="По убыванию"></a></li>
+          <li><a #sort-up href="#sort-up"><img src="img/icon-up-dir.svg" alt="По возрастанию"></a></li>
         </ul>
       </section>
 
       <section class="catalog"> <!--Секция каталога шаблонов-->
         <h2 class="visually-hidden">Список шаблонов</h2>
         <ul class="catalog-list">
+
           <li class="catalog-item">
             <h3>
               <a href="#">
@@ -202,7 +224,7 @@
         </ul>
       </section>
 
-      <ul>
+      <ul class="page-number">
         <li><a href="">1</a></li>
         <li><a href="">2</a></li> <!--ссылка на страницу 2 -->
         <li><a href="">3</a></li> <!--ссылка на страницу 3 -->
