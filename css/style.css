@@ -29,10 +29,6 @@ h1 {
     background-color: transparent;
 }
 
-.slide-2, .slide-3 {
-    display: none;
-}
-
 .principles-right li {
     display: inline;
     margin-left: 50px;
@@ -43,10 +39,8 @@ h1 {
 }
 
 .button {
-        width: 240px;
-        height: 50px;
-        display: inline-block;
-
+        /* width: 240px;
+        height: 50px; */
         font: "Roboto Medium", "Roboto", Arial, sans-serif;
         font-size: 16px;
         line-height: 18px;
@@ -54,8 +48,8 @@ h1 {
         vertical-align: middle;
         color: #ffffff;
         background-color: #fb565a;
-        border: none;
-        border-radius: 4px;
+        /* border: none;
+        border-radius: 4px; */
 }
 
 .order-apps .button {
@@ -168,14 +162,16 @@ h1 {
     margin-right: 25px;
 }
 
-.slider b {
+.slide b {
     font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
     font-size: 55px;
     line-height: 55px;
+    font-weight: 400;
     color: #000000;
     background-color: transparent;
+    text-transform: none;
 }
-.slider p {
+.slide p {
     font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -674,34 +670,35 @@ body {
 .main-header {
     margin-bottom: 75px;
   
-    /* Временно для сетки */
-    box-sizing: border-box;
+    /* Временно для сетки 
     min-height: 545px;
     border: 1px solid rgb(0, 255, 21);
     background-color: transparent;
-    
+    */
 }
 
 .top-menu {
     display: flex;
     min-width: 1200px;
     min-height: 132px;
-    /* Временно для сетки */
+    /* Временно для сетки 
     box-sizing: border-box;
     min-height: 132px;
     background-color: transparent;
     border: 1px solid #b40000;
+    */
 }
    
 .logo {
     width: 166px;
     height: 65px;
-    margin-top: 45px;
-    margin-left: 137px;
-    /* Временно для сетки */
+    margin-top: 49px;
+    margin-left: 140px;
+    /* Временно для сетки 
     box-sizing: border-box;
     background-color: transparent;
     border: 1px solid blue;
+    */
 }
 
 .logo img {
@@ -712,14 +709,16 @@ body {
 .main-navigaion {
     display: flex;
     width: 100%;
-    height: 65px;
-    margin-top: 45px;
-    margin-left: 200px;
+    margin-top: 49px;
+    margin-left: 202px;
+    margin-bottom: 5px;
     padding-top: 30px;
-    /* Временно для сетки */
+
+    /* Временно для сетки 
     box-sizing: border-box;
     background-color: transparent;
     border: 1px solid rgb(255, 251, 0);
+    */
 }
 
 .saite-navigation a {
@@ -727,9 +726,76 @@ body {
 }
 
 .basket {
-    margin-right: 137px;
+    margin-right: 141px;
     margin-left: auto;
 }
 
+.slider {
+    /* Временно для сетки */
+    box-sizing: border-box;
+    background-color: transparent;
+/*    border: 1px solid #0011ff;*/
+}
+
+.slide {
+    display: flex;
+}
+
+.left-column {
+    width: 410px;
+    min-height: 415px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    margin-left: 120px;
+
+    /* Временно для сетки 
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #0011ff;
+    */
+    
+}
+
+.slide p {
+    display: block;
+    margin-top: 27px;
+    margin-right: 40px;
+}
+
+.link-box {
+    display: flex;
+    width: 240px;
+    height: 50px; 
+    background-color: #fb565a;
+    border: none;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+.link-box a {margin: auto}
+
+/* кнопку нарисовал, но динамика не получается
+.btn-red:hover+.link-box , 
+.btn-red:focus+.link-box
+{
+    background-color: #e74246;
+}
+
+.left-column a:active +.link-box
+{
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
+}
+*/
+.slide img {
+    width: 698px;
+    height: 413px;
+}
+
+
+
+.slide-2, .slide-3 {
+    display: none;
+}
 
 
