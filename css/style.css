@@ -730,13 +730,6 @@ body {
     margin-left: auto;
 }
 
-.slider {
-    /* Временно для сетки */
-    box-sizing: border-box;
-    background-color: transparent;
-/*    border: 1px solid #0011ff;*/
-}
-
 .slide {
     display: flex;
 }
