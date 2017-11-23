@@ -39,19 +39,19 @@ h1 {
 }
 
 .button {
-        /* width: 240px;
-        height: 50px; */
-        font: "Roboto Medium", "Roboto", Arial, sans-serif;
-        font-size: 16px;
-        line-height: 18px;
-        text-align: center;
-        vertical-align: middle;
-        color: #ffffff;
-        background-color: #fb565a;
-        /* border: none;
-        border-radius: 4px; */
+    display: block;
+    width: 240px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #fb565a;
 }
-
 .order-apps .button {
     width: 160px;
 }
@@ -90,10 +90,21 @@ h1 {
     background-color: transparent;
 }
 
+.saite-navigation {
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+
+.saite-navigation li{
+    display:inline-block;
+    margin:0px;
+}
+
+
 /* Динамика логотипа ссылок и кнопок */
 .logo:hover ,
-.logo:focus 
-{
+.logo:focus {
     opacity: 0.8;
 }
 
@@ -103,6 +114,7 @@ h1 {
 
 .saite-navigation a,
 .basket a {
+    display: block;
     color: #000000;
 }
 
@@ -708,9 +720,9 @@ body {
 
 .main-navigaion {
     display: flex;
-    width: 100%;
+    width: auto;
     margin-top: 49px;
-    margin-left: 202px;
+    margin-left: 196px;
     margin-bottom: 5px;
     padding-top: 30px;
 
@@ -726,8 +738,7 @@ body {
 }
 
 .basket {
-    margin-right: 141px;
-    margin-left: auto;
+    margin-left: 202px;
 }
 
 .slide {
@@ -755,30 +766,14 @@ body {
     margin-right: 40px;
 }
 
-.link-box {
-    display: flex;
-    width: 240px;
-    height: 50px; 
-    background-color: #fb565a;
-    border: none;
-    border-radius: 4px;
+.left-column a {
     margin-top: 40px;
 }
-.link-box a {margin: auto}
 
-/* кнопку нарисовал, но динамика не получается
-.btn-red:hover+.link-box , 
-.btn-red:focus+.link-box
-{
-    background-color: #e74246;
-}
 
-.left-column a:active +.link-box
-{
-    background-color: #d7373b;
-    color: rgba(255, 255, 255, 0.3);
-}
-*/
+
+
+
 .slide img {
     width: 698px;
     height: 413px;
