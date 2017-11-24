@@ -1,11 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    min-width: 1440px;
   
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: 400;
     color: #000000;
     text-transform: uppercase;
     background-color: transparent;
@@ -15,27 +16,40 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 ul {
     list-style: none;
 }
 
-h1 {
-    font: "Roboto Medium", "Roboto", Arial, sans-serif;
-    font-size: 55px;
-    line-height: 55px;
-    text-align: center;
-    vertical-align: middle;
-    color: #000000;
-    background-color: transparent;
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .principles-right li {
     display: inline;
     margin-left: 50px;
-}
-
-.visually-hidden {
-    display: none;
 }
 
 .button {
@@ -44,7 +58,7 @@ h1 {
     padding: 0;
     padding-left: 10px;
     padding-right: 10px;
-    min-width: 240px;
+    min-width: 220px;
     min-height: 50px;
     border: none;
     border-radius: 2px;
@@ -108,7 +122,6 @@ h1 {
     background-color: transparent;
 }
 
-
 /* Динамика логотипа ссылок и кнопок */
 .logo:hover ,
 .logo:focus {
@@ -168,16 +181,16 @@ h1 {
     margin-right: 25px;
 }
 
-.slide b {
+.slider-list h3 {
     font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
     font-size: 55px;
     line-height: 55px;
-    font-weight: 400;
+    font-weight: 500;
     color: #000000;
     background-color: transparent;
     text-transform: none;
 }
-.slide p {
+.slider-list p {
     font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -627,6 +640,16 @@ h1 {
     
 /*************************сортировка*/
 /*каталог****************************/
+.page2 h1 {
+    font: "Roboto Medium", "Roboto", Arial, sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    background-color: transparent;
+}
+    
 .catalog-item .catalog-item-title {
     font-family: "Roboto", Arial, sans-serif;
     font-weight: 700;
@@ -656,33 +679,12 @@ h1 {
 
 
 /****************************каталог*/
+
 /* ----- Сеточные стили ----- */
-html,
-body {
-  min-width: 1440px; 
-  min-height: 2476px;
-}
-
-.main-header {
-    margin-bottom: 75px;
-  
-    /* Временно для сетки 
-    min-height: 545px;
-    border: 1px solid rgb(0, 255, 21);
-    background-color: transparent;
-    */
-}
-
 .top-menu {
     display: flex;
     min-width: 1200px;
-    min-height: 132px;
-    /* Временно для сетки 
-    box-sizing: border-box;
-    min-height: 132px;
-    background-color: transparent;
-    border: 1px solid #b40000;
-    */
+    /*min-height: 113px;*/
 }
    
 .logo {
@@ -690,11 +692,6 @@ body {
     height: 65px;
     margin-top: 49px;
     margin-left: 140px;
-    /* Временно для сетки 
-    box-sizing: border-box;
-    background-color: transparent;
-    border: 1px solid blue;
-    */
 }
 
 .logo img {
@@ -720,27 +717,121 @@ body {
     margin-left: 202px;
 }
 
-.slide {
-    display: flex;
-}
+.slider {
+    position: relative;
+}  
 
-.left-column {
-    width: 410px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 60px;
-    margin-left: 120px;
+.slider-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 104px;
+    z-index: 100;
+    width: 160px;
+    height: 18px;
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
 }
-
-.slide p {
+  
+.slider-controls label {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+.slider-controls label::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+  
+.slider-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.slider-item {
+    display: none;
+    padding: 78px 0 80px 0;
+}
+  
+.slider-item:nth-child(1) {
+    background-image: url("../img/slide1-8bit.png");
+    background-repeat: no-repeat;
+    background-position: 93% 18px;
+}
+  
+.slider-item:nth-child(2) {
+    background-image: url("../img/slide2-8bit.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+  
+.slider-item:nth-child(3) {
+    background-image: url("../img/slide3-8bit.png");
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
+}
+  
+#advantages1:checked ~ .slider-list .slider-item:nth-child(1) {
     display: block;
-    margin-top: 27px;
-    margin-right: 40px;
 }
+  
+#advantages2:checked ~ .slider-list .slider-item:nth-child(2) {
+    display: block;
+}
+  
+#advantages3:checked ~ .slider-list .slider-item:nth-child(3) {
+    display: block;
+}
+  
+#advantages1:checked ~ .slider-controls .slider-controls-item1::before,
+#advantages2:checked ~ .slider-controls .slider-controls-item2::before,
+#advantages3:checked ~ .slider-controls .slider-controls-item3::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+    background-color: inherit;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;
+}
+  
+.slider-item h3 {
+    max-width: 520px;
+    margin: 0;
+    margin-bottom: 27px;
+}
+  
+.slider-item p {
+    max-width: 420px;
+    margin: 0;
+    margin-bottom: 38px;
+}
+  
 
-.left-column a {
-    margin-top: 24px;
-}
+
+
+
+
+
+
+
 
 
 
@@ -751,11 +842,6 @@ body {
     height: 413px;
 }
 
-
-
-.slide-2, .slide-3 {
-    display: none;
-}
 
 
 

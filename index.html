@@ -27,43 +27,47 @@
         </nav>
       </section>
       
-      <!-- ??? организация слайдера ??? -->
+
       <section class="slider">
+        <div class="container">
+          <h2 class="visually-hidden">Преимущества</h2>
 
-        <div class="slide slide-1">
-          <div class="left-column">
-            <b>Долго, дорого, скрупулезно.</b>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a #sld1 class="button btn-red" href="#sld1">Узнать больше</a>
+          <input class="visually-hidden" type="radio" id="advantages1" name="switch" checked>
+          <input class="visually-hidden" type="radio" id="advantages2" name="switch">
+          <input class="visually-hidden" type="radio" id="advantages3" name="switch">
+          
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item1" for="advantages1">Первый</label>
+            <label class="slider-controls-item slider-controls-item2" for="advantages2">Второй</label>
+            <label class="slider-controls-item slider-controls-item3" for="advantages3">Третий</label>
           </div>
-          <img src="img/slide1-8bit.png" alt="Слайд 1">
+          
+          <ul class="slider-list">
+            <li class="slider-item"> <!-- slide slide-1 -->
+              <h3>Долго, дорого, скрупулезно.</h3>
+              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a #sld1 class="button btn-red" href="#sld1">Узнать больше</a>
+            </li>
+
+            <li class="slider-item"> <!-- slide slide-2 -->
+              <h3>Любим математику как никто другой.</h3>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a #sld2 class="button btn-red" href="#sld2">Узнать больше</a>
+            </li>
+
+            <li class="slider-item"> <!-- slide slide-3 -->
+              <h3>Только ночь, только хардкор.</h3>
+              <p>Работать днем, как все ? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+              <a #sld3 class="button btn-red" href="#sld3">Узнать больше</a>
+            </li>
+          </ul>
+
         </div>
-
-        <div class="slide slide-2">
-          <div class="left-column">
-            <b>Любим математику как никто другой.</b>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a #sld2 class="button btn-red" href="#sld2">Узнать больше</a>
-          </div>
-          <img src="img/slide2-8bit.png" alt="Слайд 2">
-        </div>
-
-        <div class="slide slide-3">
-          <div class="left-column">
-            <b>Только ночь, только хардкор.</b>
-            <p>Работать днем, как все ? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a #sld3 class="button btn-red" href="#sld3">Узнать больше</a>
-          </div>
-          <img src="img/slide3-8bit.png" alt="Слайд 3">
-        </div>
-
-        <!-- ??? точки слайдов ??? -->
-
       </section>
     </header>
 
 
-    
+
     <main class="container">
       <h1 class="visually-hidden">Дизайн - студия Нёрдс</h1>
 
