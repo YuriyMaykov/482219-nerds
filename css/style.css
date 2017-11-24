@@ -82,14 +82,6 @@ h1 {
     background-color: #eeeeee;
 }
 
-.main-navigation {
-    font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 30px;
-    color: #000000;
-    background-color: transparent;
-}
-
 .saite-navigation {
     list-style:none;
     padding:0px;
@@ -99,6 +91,17 @@ h1 {
 .saite-navigation li{
     display:inline-block;
     margin:0px;
+}
+
+.saite-navigation a,
+.basket a {
+    display: block;
+    font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    background-color: transparent;
 }
 
 
@@ -112,17 +115,10 @@ h1 {
     opacity: 0.3;
 }
 
-.saite-navigation a,
-.basket a {
-    display: block;
-    color: #000000;
-}
-
 .saite-navigation a:hover,
 .basket a:hover, 
 .saite-navigation a:focus,
-.basket a:focus 
-{
+.basket a:focus {
     color:#fb565a;
 }
 
@@ -133,37 +129,31 @@ h1 {
 }
 
 .btn-red:hover , 
-.btn-red:focus  
-{
+.btn-red:focus {
     background-color: #e74246;
 }
 
-.btn-red:active
-{
+.btn-red:active {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-green:hover , 
-.btn-green:focus  
-{
+.btn-green:focus {
     background-color: #00bc6c;
 }
 
-.btn-green:active
-{
+.btn-green:active {
     background-color: #00aa62;
     color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-yellow:hover , 
-.btn-yellow:focus  
-{
+.btn-yellow:focus {
     background-color: #eab534;
 }
 
-.btn-yellow:active
-{
+.btn-yellow:active {
     background-color: #e5a722;
     color: rgba(255, 255, 255, 0.3);
 }
@@ -203,8 +193,7 @@ h1 {
 
 .order-apps p,
 .principles p,
-.row2
-{
+.row2 {
     font-family: "Roboto Regular", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -272,7 +261,7 @@ h1 {
     background-color: #ffffff;
 }
 
-.horisont-line{
+.horisont-line {
     height: 0px; 
     width: 100%; 
     border-top: 2px solid #000000; 
@@ -314,8 +303,7 @@ h1 {
 }
 
 .logo-animation:hover,
-.logo-animation:focus 
-{
+.logo-animation:focus {
     opacity: 1;
 }
 
@@ -433,8 +421,7 @@ h1 {
 }
 
 .contact-us input,
-.contact-us textarea
-{
+.contact-us textarea {
     width: 360px;
     height: 50px;
     border: 2px solid #d7dcde;
@@ -446,8 +433,7 @@ h1 {
     background-color: transparent;
     text-transform: none;
 }
-.contact-us textarea
-{
+.contact-us textarea {
     width: 760px;
     height: 118px;
 }
@@ -460,8 +446,7 @@ h1 {
     opacity: 0.3;
 }
 .close-contact-us:hover, 
-.close-contact-us:focus 
-{
+.close-contact-us:focus {
     opacity: 1;
 }    
 .close-contact-us:active {
@@ -488,8 +473,7 @@ h1 {
 }
 
 .price-flt input,
-.price-flt label 
-{
+.price-flt label {
     font-family: "Roboto Regular", Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -538,8 +522,7 @@ h1 {
 }
 
 .grid-flt input,
-.features-flt input
-{
+.features-flt input {
     display: none;
 }
 
@@ -571,14 +554,12 @@ h1 {
 
 /* чет не работает */
 .radio:disabled + .label,
-.checkbox:disabled + .label 
-{
+.checkbox:disabled + .label {
     opacity: 0.1;
 }/* чет не работает */
 
 .radio:disabled + .custom-radio,
-.checkbox:disabled + .custom-chb 
-{
+.checkbox:disabled + .custom-chb {
     opacity: 0.1;
 }
 
@@ -608,8 +589,7 @@ h1 {
 /*сортировка*************************/
 .orderby h2,
 .orderby ul,
-.orderby ul li
-{
+.orderby ul li {
     display: inline-block;
 }
 .orderby h2 {
@@ -721,16 +701,11 @@ body {
 .main-navigaion {
     display: flex;
     width: auto;
-    margin-top: 49px;
+    margin-top: 45px;
     margin-left: 196px;
     margin-bottom: 5px;
     padding-top: 30px;
-
-    /* Временно для сетки 
-    box-sizing: border-box;
-    background-color: transparent;
-    border: 1px solid rgb(255, 251, 0);
-    */
+    flex-wrap: wrap;
 }
 
 .saite-navigation a {
@@ -751,13 +726,6 @@ body {
     padding-right: 20px;
     padding-top: 60px;
     margin-left: 120px;
-
-    /* Временно для сетки 
-    box-sizing: border-box;
-    background-color: transparent;
-    border: 1px solid #0011ff;
-    */
-    
 }
 
 .slide p {
@@ -784,5 +752,14 @@ body {
 .slide-2, .slide-3 {
     display: none;
 }
+
+
+
+    /*Временно для сетки 
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid rgb(255, 251, 0);
+    box-shadow: rgba(255, 251, 0, 0.5);
+    */
 
 
