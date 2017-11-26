@@ -71,12 +71,12 @@ ul {
     background-color: #fb565a;
 }
 .order-apps .button {
-    min-width: 160px;
+    min-width: 140px;
 }
 
 .kontakts .button {
-    min-width: 219px;
-}
+    min-width: 200px;
+    margin-bottom: 8px;}
 
 .contact-us .button {
     min-width: 260px;
@@ -98,6 +98,7 @@ ul {
 
 .main-header {
     background-color: #eeeeee;
+    margin-bottom: 80px;
 }
 
 .saite-navigation {
@@ -210,6 +211,7 @@ ul {
 
 .order-apps p,
 .principles p,
+.principles-left li,
 .row2 {
     font-family: "Roboto Regular", Arial, sans-serif;
     font-size: 16px;
@@ -223,13 +225,13 @@ ul {
     font-family: Roboto, Arial, sans-serif;
     font-weight: 700;
     font-size: 45px;
-    line-height: 15px;
+    line-height: 17px;
     color: #000000;
     background-color: transparent;
 }
 
 .row1 span {
-    font-size: 22.5px;
+    font-size: 26px;
     line-height: 0px;
     vertical-align: top;
 }
@@ -239,21 +241,25 @@ ul {
 }
 
 .principles-right ul {
-    display: table-row;     
+    display: table-row; 
+    padding: 0;
+    margin: 0;    
 }
 
 .principles-right li {
     display: table-cell;
-    padding: 12px;
-    width: 97px;
+    padding: 0;
+    width: 121px;
 }
 
 .principles h2 {
     font-family: "Roboto Medium", Arial, sans-serif;
     font-size: 45px;
     line-height: 45px;
+    font-weight: 400;
     color: #000000;
     background-color: transparent;
+    text-transform: none;
 }
 
 .principles h3 {
@@ -278,63 +284,30 @@ ul {
     background-color: #ffffff;
 }
 
-.horisont-line {
-    height: 0px; 
-    width: 100%; 
-    border-top: 2px solid #000000; 
-    opacity: 0.2;
-    padding: 0";
-}
+.logo-link img {
+    width: 200px;
+}    
 
-.logo1 {
-    width: 200px;
-    height: 180px;
-    background: url("../img/logo-1.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 0.2;
-}
-.logo2 {
-    width: 200px;
-    height: 180px;
-    background: url("../img/logo-2.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 0.2;
-}
-.logo3 {
-    width: 200px;
-    height: 180px;
-    background: url("../img/logo-3.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 0.2;
-}
-.logo4 {
-    width: 200px;
-    height: 180px;
-    background: url("../img/logo-4.png");
-    background-repeat: no-repeat;
-    background-position: center center;
+.logo-link {
     opacity: 0.2;
 }
 
-.logo-animation:hover,
-.logo-animation:focus {
-    opacity: 1;
-}
-
-.logo-animation:active {
+.logo-link:active > img {
     opacity: 0.1;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+    opacity: 1;
 }
 
 .line-separator {
     width: 4px;
-    height: 180px;
+    height: 100px;
+    margin-bottom: 48px;
     background: url("../img/vertical-separator.svg");
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 0.2;
 }
 
 .brends li {
@@ -353,7 +326,7 @@ ul {
 .kontakts p {
     font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 18px;
     color: #666666;
     background-color: transparent;
     text-transform: none;
@@ -412,10 +385,6 @@ ul {
 }
 .ig:active {
     background: url("../img/sn-ig-3.png");
-}
-
-.social-link li {
-    display: inline-block
 }
 
 .contact-us h2 {
@@ -681,6 +650,7 @@ ul {
 /****************************каталог*/
 
 /* ----- Сеточные стили ----- */
+/******************************/
 .top-menu {
     display: flex;
     min-width: 1200px;
@@ -717,6 +687,7 @@ ul {
     margin-left: 202px;
 }
 
+/******************************/
 .slider {
     position: relative;
 }  
@@ -823,33 +794,211 @@ ul {
     margin: 0;
     margin-bottom: 38px;
 }
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-.slide img {
-    width: 698px;
-    height: 413px;
+/******************************/
+.order-apps {
+    min-width: 1200px;
+    margin-bottom: 80px;
 }
 
+.order-apps ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
 
+.block {
+    display: inline-block;
+    width: 300px;
+    margin-right: 100px;
+}
 
+.order-apps img {
+    width: 100%;
+    margin-bottom: 19px;
+}
+
+.order-apps h3 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.order-apps p {
+    max-width: 280px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+/******************************/
+.principles {
+    display: flex;
+    min-width: 1160px;
+    border-top: 2px solid #eeeeee;
+    padding-top: 40px;
+    margin-bottom: 49px;
+}
+
+.principles-left, .principles-right {
+    display: inline-block;
+}
+
+.principles-left {
+    max-width: 700px;
+    padding-top: 34px;
+}
+
+.principles-left h2,
+.principles-left p,
+.principles h3, 
+.principles-left ul {
+    margin: 0;
+    padding: 0;
+}
+
+.principles-left h2 {
+    margin-bottom: 33px;
+}
+
+.principles-left p {
+    width: 650px;
+    margin-bottom: 40px;
+}
+
+.principles-left h3 {
+    margin-bottom: 24px;
+} 
+
+.principles-left ul {
+    padding-left: 35px;
+}
+
+.principles-left li {
+    margin: 24px 0;
+}
+
+.principles-right {
+    max-width: 360px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.nerds-illustr {
+    margin-bottom: 37px;
+}
+
+.principles-right h3 {
+    margin-bottom: 55px;
+}
+
+.row2 li {
+    padding-top: 26px;
+    line-height: 18px;
+}
+/******************************/
+.brends {
+    min-width: 1160px;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+    
+}
+
+.brends ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    min-height: 180px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/******************************/
+.kontakts {
+    width: 100%;
+    height: 415px;
+    margin-top: 80px;
+    overflow:hidden;
+	position:relative;
+}
+
+.kontakts img{
+	position:absolute;
+	top:-153px;
+    left:0;
+    z-index: -1;
+}
+
+.kontakts-adres {
+    width: 270px;
+    position: absolute;
+    top: 53px;
+    left: 140px;
+    background-color: #ffffff;
+    padding: 31px 0px 40px 49px;
+}
+
+.kontakts p,
+.kontakts h3,
+.social-link ul {
+    margin: 0;
+    padding: 0;
+}
+
+.kontakts h3 {
+    margin-top: 18px;
+    margin-bottom: 23px;
+}
+
+.kontakts p {
+    margin-bottom: 38px;
+}
+/******************************/
+.footer-social {
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-link li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.social-link {
+    margin-left: 140px;
+    margin-bottom: 25px;
+}
+
+.discounts {
+    margin-left: 130px;
+}
+
+.discounts p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social p:nth-of-type(2) {
+    margin-top: 10px;
+}
+
+/******************************/
 
     /*Временно для сетки 
     box-sizing: border-box;
-    background-color: transparent;
-    border: 1px solid rgb(255, 251, 0);
-    box-shadow: rgba(255, 251, 0, 0.5);
+    background-color: rgba(45, 255, 237, 0.2);
     */
+
+
 
 

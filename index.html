@@ -10,6 +10,7 @@
   <body>
 
     <header class="main-header">
+      <h1 class="visually-hidden">Дизайн - студия Нёрдс</h1>
       <section class="top-menu">
         <div class="logo">
           <a href=""><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс"></a>
@@ -26,7 +27,6 @@
           </div>
         </nav>
       </section>
-      
 
       <section class="slider">
         <div class="container">
@@ -66,39 +66,36 @@
       </section>
     </header>
 
-
-
     <main class="container">
-      <h1 class="visually-hidden">Дизайн - студия Нёрдс</h1>
-
       <section class="order-apps">
         <h2 class="visually-hidden">Направления в разработке</h2>
-        <div class="block-1">
-          <img src="img/illustration-1.png" alt="Веб-сайты">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-          <a class="button btn-red" href="catalog.html">Заказать</a>
-        </div>
-        <div class="block-2">
-          <img src="img/illustration-2.png" alt="Приложения">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a #apps2 class="button btn-green" href="#apps2">Заказать</a>
-        </div>
-        <div class="block-3">
-          <img src="img/illustration-3.png" alt="Презентации">
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a #apps3 class="button btn-yellow" href="#apps3">Заказать</a>
-        </div>
-        <div class="horisont-line" ></div>
+        <ul>
+          <li class="block">
+            <img src="img/illustration-1.png" alt="Веб-сайты">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button btn-red" href="catalog.html">Заказать</a>
+          </li>
+          <li class="block">
+            <img src="img/illustration-2.png" alt="Приложения">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a #apps2 class="button btn-green" href="#apps2">Заказать</a>
+          </li>
+          <li class="block">
+            <img src="img/illustration-3.png" alt="Презентации">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a #apps3 class="button btn-yellow" href="#apps3">Заказать</a>
+          </li>
+        </ul>
       </section>
 
       <section class="principles">
         <h2 class="visually-hidden">Наши принципы работы</h2>
 
         <section class="principles-left">
-          <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <h2>Мы <span>&mdash;</span> маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h3>Выполняем заказы на разработку:</h3>
           <ul>
@@ -125,47 +122,39 @@
           </div>
         </section>
       </section>
-
       <section class="brends">
-        <div class="horisont-line" ></div>
+        <h2 class="visually-hidden"Бренды></h3>
         <ul>
           <li>
-            <a href="https://htmlacademy.ru/" target="_blank">
-              <!-- <img class="picture" src="img/logo-1.png" alt="HTML academy"> -->
-              <div class="logo1 logo-animation"></div>
+            <a class="logo-link" href="https://htmlacademy.ru/" target="_blank">
+              <img src="img/logo-1.png" alt="htmlacademy">
             </a>
           </li>
           <li>
             <div class="line-separator"></div>
           </li>
           <li>
-            <a #borod href="#borod">
-              <!-- <img src="img/logo-2.png" alt="Barbeshop BORODINSKI"> -->
-              <div class="logo2 logo-animation"></div>
+            <a class="logo-link" #borod href="#borod">
+              <img src="img/logo-2.png" alt="Barbershop Borodinski">
             </a>
           </li>
           <li>
               <div class="line-separator"></div>
-            </li>
+          </li>
           <li>
-            <a #pink href="#pink">
-              <!-- <img src="img/logo-3.png" alt="PINK"> -->
-              <div class="logo3 logo-animation"></div>
+            <a class="logo-link" #pink href="#pink">
+              <img src="img/logo-3.png" alt="Pink">
             </a>
           </li>
           <li>
               <div class="line-separator"></div>
-            </li>
+          </li>
           <li>
-            <a #mishka href="#mishka">
-              <!-- <img src="img/logo-4.png" alt="MISHKA"> -->
-              <div class="logo4 logo-animation"></div>
+            <a class="logo-link" #mishka href="#mishka">
+              <img src="img/logo-4.png" alt="Mishka">
             </a>
           </li>
         </ul>
-        
-        <div class="horisont-line"></div>
-        <br>
       </section>
     </main>
 
@@ -173,11 +162,12 @@
 
       <section class="kontakts">
         <img src="img/map.jpg" alt="адрес на карте">
+
         <div class="kontakts-adres">
-          <h3>NЁRDS DESING STUDIO</h3><br>
+          <h3>NЁRDS DESIGN STUDIO</h3>
           <p>192186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8<br>
-            <br>
+            ул. Б. Конюшенная, д. 19/8
+            <br><br>
             тел. +7(812)275-75-75
           </p>
           <a class="button btn-red" href="#form-contact-us">Напишите нам</a>
@@ -204,8 +194,10 @@
             </li>
           </ul>
         </div>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="discounts">
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
 
     </footer>
