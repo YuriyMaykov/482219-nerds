@@ -159,10 +159,8 @@
     </main>
 
     <footer class="main-footer">
-
       <section class="kontakts">
         <img src="img/map.jpg" alt="адрес на карте">
-
         <div class="kontakts-adres">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>192186, Санкт-Петербург,<br>
@@ -175,21 +173,27 @@
       </section>
 
       <section class="footer-social">
-        <div class="social-link">
+        <div class="social-network">
           <ul>
-            <li>
-              <a #vk href="#vk"><img src="img/vk-1.png">
-                <div class="vk"></div>
+            <li class="social-link">
+              <a #vk href="#vk">
+                <img src="img/sn-vk-1.png" alt="Вконтакте">
+                <img src="img/sn-vk-2.png" alt="Вконтакте">
+                <img src="img/sn-vk-3.png" alt="Вконтакте">
               </a>
             </li>
-            <li>
-              <a #fb href="#fb"><img src="img/fb-1.png">
-                <div class="fb"></div>
+            <li class="social-link">
+              <a #fb href="#fb">
+                <img src="img/sn-fb-1.png" alt="Facebook">
+                <img src="img/sn-fb-2.png" alt="Facebook">
+                <img src="img/sn-fb-3.png" alt="Facebook">
               </a>
             </li>
-            <li>
-              <a #ig href="#ig"><img src="img/ig-1.png">
-                <div class="ig"></div>
+            <li class="social-link">
+              <a #ig href="#ig">
+                <img src="img/sn-ig-1.png" alt="Instagram">
+                <img src="img/sn-ig-2.png" alt="Instagram">
+                <img src="img/sn-ig-3.png" alt="Instagram">
               </a>
             </li>
           </ul>
@@ -199,28 +203,31 @@
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
-
     </footer>
 
     <!-- форма обратной связи -->
-    <form class="contact-us" #form-contact-us name="contact-us" action="\echo" method="POST">
-      <h2>Напишите нам</h2>
-      <label>Ваше имя:<br>
-          <input type="text" name="Your-name" id="name-f" placeholder="Представьтесь, пожалуйста." size="50" required>
-      </label>
-      <br>
-      <label>Ваш e-mail:<br>
-        <input type="email" name="Your-email" id="email-f" placeholder="Для отправки ответа." required>
-      </label>
-      <br>
-      <label>Текст письма:<br>
-        <textarea cols="100%" rows="3" name="text-email" id="textemail-f" placeholder="В свободной форме." required></textarea>
-      </label>
-      <br>
-      <button type="submit" class="button btn-red">Отправить</button>
-      <br>
+    <section class="modal form-contact visually-hidden" >
       <button class="close-contact-us" type="button" name="close-contact-us"></button>
-
-    </form>
+      <h2>Напишите нам</h2>
+      <form class="contact-us" #form-contact-us name="contact-us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="flex-row-between">
+          <p>
+            <label for="name-f">Ваше имя:</label><br>
+            <input type="text" name="Your-name" id="name-f" placeholder="Представьтесь, пожалуйста." required>
+          </p>
+          <p>
+            <label>Ваш e-mail:<br>
+              <input type="email" name="Your-email" id="email-f" placeholder="Для отправки ответа." required>
+            </label>
+          </p>
+          <p>
+            <label>Текст письма:<br>
+              <textarea cols="100%" rows="3" name="text-email" id="textemail-f" placeholder="В свободной форме." required></textarea>
+            </label>
+          </p>
+          <button type="submit" class="button btn-red">Отправить</button>
+        </div>
+      </form>
+    </section>
   </body>
 </html>

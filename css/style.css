@@ -21,6 +21,26 @@ img {
     height: auto;
 }
 
+.flex-row-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-for-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -78,14 +98,11 @@ ul {
     min-width: 200px;
     margin-bottom: 8px;}
 
-.contact-us .button {
-    min-width: 260px;
-}
-
 .filter-form .button {
     min-width: 260px;
     color: #000000;
     background-color: #eeeeee;
+    text-transform: uppercase;
 }
 
 .btn-green {
@@ -98,6 +115,7 @@ ul {
 
 .main-header {
     background-color: #eeeeee;
+    padding-bottom: 0;
     margin-bottom: 80px;
 }
 
@@ -351,93 +369,55 @@ ul {
     text-transform: none;
 }
 
-.vk {
+/*Крутотень на ссылки соцалок********/
+.social-link {
     width: 79px;
     height: 79px;
-    background: url("../img/sn-vk-1.png");
-}
-.vk:hover {
-    background: url("../img/sn-vk-2.png");
-}
-.vk:active {
-    background: url("../img/sn-vk-3.png");
 }
 
-.fb {
-    width: 79px;
-    height: 79px;
-    background: url("../img/sn-fb-1.png");
+.social-link {
+    position: relative;
 }
-.fb:hover {
-    background: url("../img/sn-fb-2.png");
-}
-.fb:active {
-    background: url("../img/sn-fb-3.png");
-}
-
-.ig {
-    width: 79px;
-    height: 79px;
-    background: url("../img/sn-ig-1.png");
-}
-.ig:hover {
-    background: url("../img/sn-ig-2.png");
-}
-.ig:active {
-    background: url("../img/sn-ig-3.png");
+  
+.social-link img:nth-child(2),
+.social-link img:last-child {
+    position: absolute;
+    top: 0px;
+    left: 0;
 }
 
-.contact-us h2 {
-    font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
-    font-size: 45px;
-    line-height: 45px;
-    color: #000000;
-    background-color: transparent;
-    text-transform: none;
+.social-link img:last-child {
+    opacity: 0;
+    visibility: hidden;
 }
 
-.contact-us label {
-    font-family: "Roboto", Arial, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    color: #000000;
-    background-color: transparent;
-    text-transform: none;
+.social-link:hover img:first-child,
+.social-link a:focus img:first-child,
+.social-link img:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 350ms ease, opacity 350ms ease, transform 350ms ease ;
 }
 
-.contact-us input,
-.contact-us textarea {
-    width: 360px;
-    height: 50px;
-    border: 2px solid #d7dcde;
-    border-radius: 2px;
-    font-family: "Roboto Regular", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    color: #444444;
-    background-color: transparent;
-    text-transform: none;
-}
-.contact-us textarea {
-    width: 760px;
-    height: 118px;
-}
-
-.close-contact-us {
-    width: 21px;
-    height: 21px;
-    border: none;
-    background: url("../img/close-cross.svg");
-    opacity: 0.3;
-}
-.close-contact-us:hover, 
-.close-contact-us:focus {
+.social-link:hover img:nth-child(2),
+.social-link a:focus img:nth-child(2) {
     opacity: 1;
-}    
-.close-contact-us:active {
-    opacity: 0.1;
-}    
+    visibility: visible; 
+    transform: rotate(360deg);
+}
+
+.social-link:active img:first-child,
+.social-link img:last-child {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 350ms ease, opacity 350ms ease;
+}
+
+.social-link:active img:last-child {
+    opacity: 1;
+    visibility: visible; 
+}
+/********Крутотень на ссылки соцалок*/
 
 /**catalog***************************/
 /*фильтр*****************************/
@@ -454,8 +434,9 @@ ul {
     background-color: transparent;
 }
 
+/* 
 .price-flt legend {
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.6px;
 }
 
 .price-flt input,
@@ -495,7 +476,7 @@ ul {
     text-align: center;
     vertical-align: middle;
     margin-left: 5px;
-}
+} */
 
 .grid-flt .label,
 .features-flt .label {
@@ -609,14 +590,21 @@ ul {
     
 /*************************сортировка*/
 /*каталог****************************/
-.page2 h1 {
-    font: "Roboto Medium", "Roboto", Arial, sans-serif;
+.page2 {
+    display: inline-block;
+    width: 100%;
+    font-family: "Roboto Medium", Arial, sans-serif;
     font-size: 55px;
     line-height: 55px;
+    font-weight: normal;
+    text-transform: none;
     text-align: center;
-    vertical-align: middle;
     color: #000000;
     background-color: transparent;
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+    margin-bottom: 105px;
 }
     
 .catalog-item .catalog-item-title {
@@ -684,7 +672,7 @@ ul {
 }
 
 .basket {
-    margin-left: 202px;
+    margin-left: 207px;
 }
 
 /******************************/
@@ -792,7 +780,7 @@ ul {
 .slider-item p {
     max-width: 420px;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
 }
 
 /******************************/
@@ -830,7 +818,7 @@ ul {
 .order-apps p {
     max-width: 280px;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 }
 
 /******************************/
@@ -869,7 +857,7 @@ ul {
 }
 
 .principles-left h3 {
-    margin-bottom: 24px;
+    margin-bottom: 27px;
 } 
 
 .principles-left ul {
@@ -946,7 +934,7 @@ ul {
 
 .kontakts p,
 .kontakts h3,
-.social-link ul {
+.social-network ul {
     margin: 0;
     padding: 0;
 }
@@ -969,14 +957,14 @@ ul {
     align-items: center;
 }
 
-.social-link li {
+.social-network li {
     display: inline-block;
     margin-right: 8px;
 }
 
-.social-link {
+.social-network {
     margin-left: 140px;
-    margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 .discounts {
@@ -991,14 +979,392 @@ ul {
 .footer-social p:nth-of-type(2) {
     margin-top: 10px;
 }
+/******************************/
+.modal {
+    position: fixed;
+    box-shadow: 0px 20px 50px 2px #595a5a;
+}
+
+.form-contact p {
+    padding: 0;
+    margin: 0;
+}
+
+.form-contact {
+    top: 125px;
+    left: 50%;
+    width: 760px;
+    margin-left: -25%;
+    padding-left: 98px;
+    padding-right: 100px;
+    padding-top: 68px;
+    padding-bottom: 80px;
+    background-color: #ffffff;
+}
+
+.close-contact-us {
+    width: 21px;
+    height: 21px;
+    border: none;
+    background: url("../img/close-cross.svg");
+    opacity: 0.3;
+    position: absolute;
+    right: 90px;
+    top: 77px;
+}
+
+.close-contact-us:hover, 
+.close-contact-us:focus {
+    opacity: 1;
+}    
+.close-contact-us:active {
+    opacity: 0.1;
+}    
+
+.form-contact h2 {
+    font-family: "Roboto Medium", Arial, sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 37px;
+}
+
+
+.contact-us label {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    background-color: transparent;
+    text-transform: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 360px;
+    height: 50px;
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+    font-family: "Roboto Regular", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+    background-color: transparent;
+    text-transform: none;
+    padding: 12px;
+    margin: 0;
+    margin-top: 7px;
+    box-sizing: border-box;
+}
+
+.contact-us textarea {
+    width: 100%;
+    height: 118px;
+}
+
+.flex-row-between p:nth-of-type(3) {
+    margin-top: 32px;
+}
+
+.contact-us .button {
+    min-width: 260px;
+    margin-top: 40px;
+}
+
+
 
 /******************************/
+.title-text h1 {
+    font-family: "Roboto Medium", Arial, sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 400px;
+    text-transform: none;
+    text-align: center;
+}
+
+.inner-page {
+    margin-bottom: 40px;
+}
+
+.filters {
+    width: 260px;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 16px;
+}
+
+/*Стоимость**********************/
+.price-flt {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 56px;
+}
+
+.price-flt legend {
+    letter-spacing: 0.6px;
+}
+  
+.range-filter {
+    margin-top: 47px;
+}
+  
+.range-controls {
+    position: relative;
+    height: 41px;
+    margin-bottom: 17px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+  
+.range-controls .scale {
+    height: 2px;
+    background: #d7dcde;
+}
+  
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+  
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+.range-controls .toggle-min {
+    left: 20px;
+}
+  
+.range-controls .toggle-max {
+    left: 160px;
+}
+  
+.price-controls {
+    font-size: 0;
+}
+  
+.price-controls label {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+  
+.price-controls input {
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+  
+.max-price {
+    text-align: right;
+}
+/**********************Стоимость*/
+/*Сетка**************************/
+.grid-flt {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.grid-flt legend {
+    margin-bottom: 12px;
+}
+.grid-flt label {
+    display: block;
+    margin-bottom: 15px; 
+}
+
+.label {
+    margin-left: 5px;
+}
+/**************************Сетка*/
+
+/*Особенности********************/
+.features-flt {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.features-flt legend {
+    margin-bottom: 12px;
+}
+
+.features-flt label {
+    display: block;
+    margin-bottom: 16px;
+}
+
+/********************Особенности*/
+
+.catalog-group {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    width: 800px;
+}
+
+.orderby {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    margin-left: auto;
+    width: 800px;
+    padding: 17px 20px;
+}
+
+.orderby h2,
+.orderby ul,
+.orderby li {
+    margin: 0;
+    padding: 0;
+}
+
+.orderby ul:first-of-type {
+    margin-left: auto;
+}
+
+.orderby ul:first-of-type li {
+    margin-left: 22px;
+}
+
+.orderby ul:last-of-type {
+    margin-left: 33px;
+}
+
+.orderby ul:last-of-type li {
+    margin-left: 15px;
+}
+
+
+.catalog-box {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: auto;
+    width: 800px;
+    padding: 0 20px;
+}
+
+.catalog-list {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-item {
+    width: 360px;
+    position: relative;
+    overflow: hidden;
+}
+
+.catalog-item-image{
+    margin: 35px 0;
+}
+.catalog-item-image>img {
+    width: 100%;
+    opacity: 0.12;
+    margin-bottom: -7px;
+}
+
+.catalog-item-image>img:hover {
+    opacity: 1;
+}
+
+.catalog-item-image>a>img {
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.catalog-item h3 {
+    display: block;
+    width: 100%;
+    height: 231px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 25px;
+    background-color: #eeeeee;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: -231px;
+    /* bottom: 40px; */
+}
+
+.catalog-item-title,
+.catalog-category {
+    display: block;
+}    
+
+.catalog-item-title {
+    margin-bottom: 10px;
+}
+
+.catalog-category {
+    margin-bottom: 50px;
+}    
+
+.catalog-item-price a {
+    min-width: 180px;  
+    background-color: #fb565a;  
+}
+
+.catalog-item-price a:hover,
+.catalog-item-price a:focus {
+    background-color: #e74246;  
+}
+
+.catalog-item-price a:active {
+    background-color: #d7373b;  
+}
+
+.catalog-item-image:hover ~ 
+.catalog-item h3
+{
+    bottom: 40px;
+}
+
+
 
     /*Временно для сетки 
     box-sizing: border-box;
     background-color: rgba(45, 255, 237, 0.2);
     */
-
 
 
 
