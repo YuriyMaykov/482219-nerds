@@ -242,7 +242,7 @@
             <br><br>
             тел. +7(812)275-75-75
           </p>
-          <a class="button btn-red" href="#form-contact-us">Напишите нам</a>
+          <a class="button btn-red open-contact-us" href="#form-contact-us">Напишите нам</a>
         </div>
       </section>
       <section class="footer-social">
@@ -277,6 +277,104 @@
         </div>
       </section>
     </footer>
+
+        <!-- форма обратной связи -->
+        <section class="modal form-contact visually-hidden" >
+            <button class="close-contact-us" type="button" name="close-contact-us"></button>
+            <h2>Напишите нам</h2>
+            <form class="contact-us" #form-contact-us name="contact-us" action="https://echo.htmlacademy.ru" method="post">
+              <div class="flex-row-between">
+                <p>
+                  <label for="name-f">Ваше имя:</label><br>
+                  <input type="text" name="Your-name" id="name-f" placeholder="Представьтесь, пожалуйста." required>
+                </p>
+                <p>
+                  <label>Ваш e-mail:<br>
+                    <input type="email" name="Your-email" id="email-f" placeholder="Для отправки ответа." required>
+                  </label>
+                </p>
+                <p>
+                  <label>Текст письма:<br>
+                    <textarea cols="100%" rows="3" name="text-email" id="textemail-f" placeholder="В свободной форме."></textarea>
+                  </label>
+                </p>
+                <button type="submit" class="button btn-red btn-submit">Отправить</button>
+              </div>
+            </form>
+          </section>
+          <script>
+            var link = document.querySelector(".open-contact-us"); //кнопка Напишите нам
+            var popup = document.querySelector(".form-contact"); //секция формы
+            var close = popup.querySelector(".close-contact-us"); //кнопка закрытия формы
+            var login = popup.querySelector("[name=Your-name]"); //поле с логином
+            var e_mail = popup.querySelector("[name=Your-email]"); //поле с почтой
+            var leter = popup.querySelector("[name=text-email]"); //текст письма
+            var form = popup.querySelector("form"); //форма
+            var login_restore = localStorage.getItem("login");
+            var email_restore = localStorage.getItem("e_mail");
+        
+      
+            link.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              popup.classList.remove("visually-hidden");
+              popup.classList.add("modal-show");
+              if (login_restore) {
+                login.value = login_restore;
+              }
+        
+              if (email_restore) {
+                e_mail.value = email_restore;
+              }
+      
+              if(login_restore && email_restore) {
+                  leter.focus();
+              } 
+              else {
+                if(login_restore && !email_restore) {
+                  e_mail.focus();
+                }
+                else{
+                  login.focus();
+                }
+              }
+            });
+      
+            close.addEventListener("click", function (evt) {
+              evt.preventDefault();
+              popup.classList.add("visually-hidden");
+              popup.classList.remove("modal-show");
+              popup.classList.remove("modal-error");
+            });
+      
+            form.addEventListener("submit", function (evt) {
+              if (!login.value || !e_mail.value || !leter.value) {
+                  evt.preventDefault();
+                  popup.classList.remove("modal-error");
+                  popup.offsetWidth = popup.offsetWidth;
+                  popup.classList.add("modal-error");
+                  console.log("Заполните все поля пожалуйста !");
+                }
+                else {
+                  localStorage.setItem("login", login.value);
+                  localStorage.setItem("e_mail", e_mail.value);
+              }
+            });
+      
+            window.addEventListener("keydown", function (evt) {
+              if (evt.keyCode === 27) {
+                if (!popup.classList.contains("visually-hidden")) {
+                  popup.classList.add("visually-hidden");
+                  popup.classList.remove("modal-show");
+                  popup.classList.remove("modal-error");
+                }
+              }
+            });
+      
+      
+      
+          </script>
+      
+
   </body>
 </html>
     
