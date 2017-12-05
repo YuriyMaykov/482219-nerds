@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 1440px;
+    width: 1440px;
   
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
@@ -64,6 +64,7 @@ ul {
     width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-bottom: 76px;
     box-sizing: border-box;
 }
 
@@ -96,7 +97,9 @@ ul {
 
 .kontakts .button {
     min-width: 200px;
-    margin-bottom: 8px;}
+    margin-bottom: 8px;
+    margin-top: 33px;
+}
 
 .filter-form .button {
     min-width: 260px;
@@ -116,7 +119,7 @@ ul {
 .main-header {
     background-color: #eeeeee;
     padding-bottom: 0;
-    margin-bottom: 80px;
+    margin-bottom: 77px;
 }
 
 .saite-navigation {
@@ -341,7 +344,8 @@ ul {
     background-color: transparent;
 }
 
-.kontakts p {
+.kontakts p,
+.kontakts .phone  {
     font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -350,7 +354,7 @@ ul {
     text-transform: none;
 }
 
-.footer-social p:nth-of-type(1) {
+.discounts h2 {
     font-family: "Roboto", Arial, sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -360,7 +364,7 @@ ul {
     text-transform: none;
 }
 
-.footer-social p:nth-of-type(2) {
+.discounts p {
     font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -600,14 +604,14 @@ ul {
     /*min-height: 113px;*/
 }
    
-.logo {
+.logo, .logo-on-index {
     width: 166px;
     height: 65px;
     margin-top: 49px;
     margin-left: 140px;
 }
 
-.logo img {
+.logo img, .logo-on-index img {
     height: 65px;
     width: 160px;
 }
@@ -773,7 +777,7 @@ ul {
 .order-apps p {
     max-width: 280px;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 }
 
 /******************************/
@@ -879,12 +883,13 @@ ul {
 }
 
 .kontakts-adres {
-    width: 270px;
+    box-sizing: border-box;
+    width: 318px;
     position: absolute;
     top: 53px;
     left: 140px;
     background-color: #ffffff;
-    padding: 31px 0px 40px 49px;
+    padding: 32px 49px 40px 49px;
 }
 
 .kontakts p,
@@ -899,8 +904,8 @@ ul {
     margin-bottom: 23px;
 }
 
-.kontakts p {
-    margin-bottom: 38px;
+.kontakts-adres>p {
+    margin-bottom: 16px;
 }
 /******************************/
 .footer-social {
@@ -926,12 +931,17 @@ ul {
     margin-left: 130px;
 }
 
-.discounts p {
+.discounts p,
+.discounts h2 {
     margin: 0;
     padding: 0;
 }
 
-.footer-social p:nth-of-type(2) {
+.discounts h2 {
+    margin: 8px 0;
+}
+
+.discounts p {
     margin-top: 10px;
 }
 /******************************/
@@ -940,21 +950,23 @@ ul {
     box-shadow: 0px 20px 50px 2px #595a5a;
 }
 
-.form-contact p {
-    padding: 0;
-    margin: 0;
-}
-
 .form-contact {
-    top: 125px;
-    left: 50%;
     width: 760px;
-    margin-left: -30%; /*-25*/
     padding-left: 98px;
     padding-right: 100px;
     padding-top: 68px;
     padding-bottom: 80px;
     background-color: #ffffff;
+    
+    top: 125px;
+    left:  50%;
+    transform: translateX(-50%);
+    /*margin-left: -380px;*/
+}
+
+.form-contact p {
+    padding: 0;
+    margin: 0;
 }
 
 .close-contact-us {
@@ -1008,7 +1020,7 @@ ul {
     font-family: "Roboto Regular", Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
-    color: #444444;
+    color: #a1a1a1;
     background-color: transparent;
     text-transform: none;
     padding: 12px;
@@ -1035,6 +1047,25 @@ ul {
 .contact-us textarea {
     resize: vertical;
 }
+
+.contact-us input:hover
+, .contact-us textarea:hover {
+    color: #a1a1a1;
+    border-color: #b4b9bb;
+}
+
+.contact-us input:focus 
+, .contact-us textarea:focus {
+    color: #444444;
+    border-color: #000000;
+}
+
+.contact-us input:invalid 
+, .contact-us textarea:invalid {
+    color: #e74246;
+    border-color: #e74246;
+}
+
 
 /******************************/
 .title-text h1 {
@@ -1256,10 +1287,9 @@ ul {
 .catalog-item>img {
     width: 100%;
     opacity: 0.12;
-    /* margin-bottom: -7px; */
 }
 
-.catalog-item>img:hover {
+.catalog-item:hover>img {
     opacity: 1;
 }
 
@@ -1346,6 +1376,7 @@ ul {
     transform: rotate(0deg);
     opacity: 1;
 }
+
 /************************Каталог*/
 /*Пагинатор**********************/
 .paginator {
@@ -1401,6 +1432,7 @@ ul {
 
 .page-active a {
     border-bottom: 2px solid #fb565a;
+    cursor: pointer;
 }
 
 .sort-active a {
