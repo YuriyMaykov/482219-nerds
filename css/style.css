@@ -1537,6 +1537,11 @@ ul {
     opacity: 1;
 }
 
+.invalid {
+    color: #e74246;
+    border-color: #e74246;
+}
+
 /*for JS*************************/
 @keyframes bounce {
     0% {
