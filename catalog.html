@@ -10,29 +10,36 @@
   <body>
 
     <header class="main-header inner-page">
-      <section class="top-menu">
-        <div class="logo">
-          <a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс"></a>
-        </div>
-        <nav class = "main-navigaion">
-          <ul class="saite-navigation">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li class="page-active"><a>Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <div class="basket">
-            <a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+      <div class="container">
+        <section class="top-menu">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии Нёрдс" width="160px" height="65">
+            </a>
           </div>
-        </nav>
-      </section>
-      <h1 class="page2">Магазин готовых шаблонов</h1>
+
+          <nav class = "main-navigaion">
+            <ul class="saite-navigation">
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li class="page-active"><a>Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="basket">
+              <a href="#">
+                <span class="basket-icon">Корзина</span>
+              </a>
+            </div>
+          </nav>
+        </section>
+        <h1 class="page2">Магазин готовых шаблонов</h1>
+      </div>
     </header>
 
     <main class="flex-for-main">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр списка каталога продуктов</h2>
-        <form method="get" action="" class="filter-form">
+        <form method="get" action="https://echo.htmlacademy.ru" class="filter-form">
           <fieldset class="price-flt">
             <legend>Стоимость:</legend>
             <div class="range-filter">
@@ -98,7 +105,7 @@
             </label>
           </fieldset>
 
-          <button type="button" class="button" name="btn-fltr">Показать</button>
+          <button type="submit" class="button" name="btn-fltr">Показать</button>
         </form>
       </section>
 
@@ -112,16 +119,16 @@
             <li><a href="#">По названию</a></li>
           </ul>
           <ul>
-            <li><a href="#"><img src="img/icon-down-dir.svg" alt="По убыванию"></a></li>
-            <li><a href="#"><img src="img/icon-up-dir.svg" alt="По возрастанию"></a></li>
+            <li><a href="#"><img src="img/icon-down-dir.svg" alt="По убыванию" width="11px"></a></li>
+            <li><a href="#"><img src="img/icon-up-dir.svg" alt="По возрастанию" width="11px"></a></li>
           </ul>
         </section>
         <ul class="catalog-box">
           <li class="catalog-item">
-              <img src="img/browser.svg" alt="browser">
+              <img src="img/browser.svg" alt="browser" width="360px">
               <div class="item-content">
                 <a href="#">
-                  <img src="img/img-sedona.jpg" alt="Sedona. Информационный сайт для туристов">
+                  <img src="img/img-sedona.jpg" alt="Sedona. Информационный сайт для туристов" width="360px" height="576px">
                 </a>
                 <div class="block-hidden">
                   <a href="#">
@@ -135,10 +142,10 @@
               </div>
           </li>
           <li class="catalog-item">
-              <img src="img/browser.svg" alt="browser">
+              <img src="img/browser.svg" alt="browser" width="360px">
               <div class="item-content">
                 <a href="#">
-                  <img src="img/img-pink.jpg" alt="Pink app. Продуктовый лендинг приложения для IOS и Android">
+                  <img src="img/img-pink.jpg" alt="Pink app. Продуктовый лендинг приложения для IOS и Android" width="360px" height="576px">
                 </a>
                 <div class="block-hidden">
                   <a href="#">
@@ -152,10 +159,10 @@
               </div>
           </li>
           <li class="catalog-item">
-              <img src="img/browser.svg" alt="browser">
+              <img src="img/browser.svg" alt="browser" width="360px">
               <div class="item-content">
                 <a href="#">
-                  <img src="img/img-barbershop.jpg" alt="Barbershop. Сайт салоны красоты. Для мужчин, да.">                </a>
+                  <img src="img/img-barbershop.jpg" alt="Barbershop. Сайт салоны красоты. Для мужчин, да." width="360px" height="576px">                </a>
                 <div class="block-hidden">
                   <a href="#">
                     <span class="catalog-item-title">Barbershop</span>
@@ -168,10 +175,10 @@
               </div>
           </li>
           <li class="catalog-item">
-              <img src="img/browser.svg" alt="browser">
+              <img src="img/browser.svg" alt="browser" width="360px">
               <div class="item-content">
                 <a href="#">
-                  <img src="img/img-mishka.jpg" alt="Mishka. Интернет-магазин вязаных игрушек.">  
+                  <img src="img/img-mishka.jpg" alt="Mishka. Интернет-магазин вязаных игрушек." width="360px" height="576px">  
                 </a>
                 <div class="block-hidden">
                   <a href="#">
@@ -185,10 +192,10 @@
               </div>
           </li>
           <li class="catalog-item">
-              <img src="img/browser.svg" alt="browser">
+              <img src="img/browser.svg" alt="browser" width="360px">
               <div class="item-content">
                 <a href="#">
-                  <img src="img/img-aplus.jpg" alt="A Plus. Лендинг курсов повышения квалификации.">
+                  <img src="img/img-aplus.jpg" alt="A Plus. Лендинг курсов повышения квалификации." width="360px" height="576px">
                 </a>
                 <div class="block-hidden">
                   <a href="#">
@@ -202,10 +209,10 @@
               </div>
           </li>
           <li class="catalog-item">
-              <img src="img/browser.svg" alt="browser">
+              <img src="img/browser.svg" alt="browser" width="360px">
               <div class="item-content">
                 <a href="#">
-                  <img src="img/img-kvast.jpg" alt="Кваст. Промо-сайт производителя крафтового кваса.">
+                  <img src="img/img-kvast.jpg" alt="Кваст. Промо-сайт производителя крафтового кваса." width="360px" height="576px">
                 </a>
                 <div class="block-hidden">
                   <a href="#">
@@ -221,55 +228,65 @@
         </ul>
 
         <div class="paginator">
-            <span class="paginator-active">1</span>
+            <a class="paginator-active">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#" class="paginator-next">Следующая</a>
         </div>
-
       </section>
-
     </main>
 
     <footer class="main-footer">
-      <section class="kontakts">
-        <img src="img/map.jpg" alt="адрес на карте">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBaC5UCt2B" width="100%" height="100%" frameborder="0"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBaC5UCt2B" width="100%" height="415px" frameborder="0"></iframe>
+      <section class="kontakts container">
         <div class="kontakts-adres">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>192186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
           </p>
-          <a class="phone" href="#"><span>тел. </span>+7 (812) 275-75-75</a>
+          <a class="phone" href="tel:+78122757575"><span>тел. </span>+7 (812) 275-75-75</a>
           <a class="button btn-red open-contact-us" href="#">Напишите нам</a>
         </div>
       </section>
-
-      <section class="footer-social">
+  
+      <section class="footer-social container">
         <div class="social-network">
+          <a href="#">
+            <span class="icon icon--vk ">vkonktakte</span>
+          </a>
+          <a href="#">
+            <span class="icon icon--fb">Facebook</span>
+          </a> 
+          <a href="#">
+            <span class="icon icon--ig">Instagram</span>
+          </a> 
+          
+          <!-- старое решение на <img>
           <ul>
             <li class="social-link">
               <a href="#">
-                <img src="img/sn-vk-1.png" alt="Вконтакте">
-                <img src="img/sn-vk-2.png" alt="Вконтакте">
-                <img src="img/sn-vk-3.png" alt="Вконтакте">
+                <img src="img/sn-vk-1.png" alt="Вконтакте" width="79px">
+                <img src="img/sn-vk-2.png" alt="Вконтакте" width="79px">
+                <img src="img/sn-vk-3.png" alt="Вконтакте" width="79px">
               </a>
             </li>
             <li class="social-link">
               <a href="#">
-                <img src="img/sn-fb-1.png" alt="Facebook">
-                <img src="img/sn-fb-2.png" alt="Facebook">
-                <img src="img/sn-fb-3.png" alt="Facebook">
+                <img src="img/sn-fb-1.png" alt="Facebook" width="79px">
+                <img src="img/sn-fb-2.png" alt="Facebook" width="79px">
+                <img src="img/sn-fb-3.png" alt="Facebook" width="79px">
               </a>
             </li>
             <li class="social-link">
               <a href="#">
-                <img src="img/sn-ig-1.png" alt="Instagram">
-                <img src="img/sn-ig-2.png" alt="Instagram">
-                <img src="img/sn-ig-3.png" alt="Instagram">
+                <img src="img/sn-ig-1.png" alt="Instagram" width="79px">
+                <img src="img/sn-ig-2.png" alt="Instagram" width="79px">
+                <img src="img/sn-ig-3.png" alt="Instagram" width="79px">
               </a>
             </li>
           </ul>
+           -->
+
         </div>
         <div class="discounts">
           <h2>Давайте дружить, это выгодно!</h2>
@@ -277,6 +294,11 @@
         </div>
       </section>
     </footer>
+  
+
+
+
+
 
     <section class="modal form-contact visually-hidden" >
       <button class="close-contact-us" type="button" name="close-contact-us"></button>
