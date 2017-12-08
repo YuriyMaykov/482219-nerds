@@ -1106,8 +1106,7 @@ ul {
     margin-top: 34px;
 }
 
-.contact-us input,
-.contact-us textarea {
+.input-field {
     display: block;
     width: 360px;
     height: 50px;
@@ -1128,10 +1127,7 @@ ul {
 .contact-us textarea {
     width: 100%;
     height: 118px;
-}
-
-.flex-row-between p:nth-of-type(3) {
-    margin-top: 32px;
+    resize: vertical;
 }
 
 .contact-us .button {
@@ -1141,24 +1137,17 @@ ul {
     text-transform: uppercase;
 }
 
-.contact-us textarea {
-    resize: vertical;
-}
-
-.contact-us input:hover
-, .contact-us textarea:hover {
+.input-field:hover {
     color: #a1a1a1;
     border-color: #b4b9bb;
 }
 
-.contact-us input:focus 
-, .contact-us textarea:focus {
+.input-field:focus {
     color: #444444;
     border-color: #000000;
 }
 
-.contact-us input:invalid 
-, .contact-us textarea:invalid {
+.input-field:invalid {
     color: #e74246;
     border-color: #e74246;
 }

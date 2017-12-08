@@ -48,10 +48,19 @@ form.addEventListener("submit", function (evt) {
         popup.offsetWidth = popup.offsetWidth;
         popup.classList.add("modal-error");
         console.log("Заполните все поля пожалуйста !");
+        if (!leter.value){
+            leter.classList.add("invalid");
         }
-        else {
+    }
+    else {
         localStorage.setItem("login", login.value);
         localStorage.setItem("e_mail", e_mail.value);
+    }
+});
+
+leter.addEventListener("keydown", function (evt) {
+    if (leter.value) {
+        leter.classList.remove("invalid");
     }
 });
 
