@@ -1,7 +1,10 @@
 body {
     margin: 0;
-    padding: 0;
-    min-width: 1440px;
+    /* padding: 0; */
+    padding: 0 120px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
@@ -137,7 +140,7 @@ ul {
 .main-header {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 100%;
+    width: 1200px;
     margin: 0;
     padding: 0;
     background-color: #eeeeee;
@@ -927,12 +930,13 @@ ul {
 }
 
 .main-footer {
-    width: 100%;
+    width: 1200px;
     position: relative;
 }
 
 .kontakts {
-    width: 1440px;
+    /* width: 1440px; */
+    width: 100%;
     height: 415px;
     position: relative;
     background-image: url(../img/map.jpg);
@@ -945,6 +949,7 @@ ul {
     height: 415px;
     position: absolute;
     z-index: 1;
+    border: none;
 }
 
 
@@ -955,7 +960,6 @@ ul {
     position: absolute;
     z-index: 2;
     margin-top: 55px;
-    margin-left: 120px;
     background-color: #ffffff;
     padding: 32px 49px 40px 49px;
 }
@@ -1260,7 +1264,11 @@ ul {
     background-color: #f1f1f1;
     border-radius: 5px;
 }
-  
+
+.range-controls span {
+    display: block;
+}
+
 .range-controls .scale {
     height: 2px;
     background: #d7dcde;
