@@ -721,21 +721,21 @@ ul {
     background-position: 100% 20px;
 }
   
-#advantages1:checked ~ .slider-list .slider-item:nth-child(1) {
+.advantage1:checked ~ .slider-list .slider-item:nth-child(1) {
     display: block;
 }
   
-#advantages2:checked ~ .slider-list .slider-item:nth-child(2) {
+.advantage2:checked ~ .slider-list .slider-item:nth-child(2) {
     display: block;
 }
   
-#advantages3:checked ~ .slider-list .slider-item:nth-child(3) {
+.advantage3:checked ~ .slider-list .slider-item:nth-child(3) {
     display: block;
 }
   
-#advantages1:checked ~ .slider-controls .slider-controls-item1::before,
-#advantages2:checked ~ .slider-controls .slider-controls-item2::before,
-#advantages3:checked ~ .slider-controls .slider-controls-item3::before {
+.advantage1:checked ~ .slider-controls .slider-controls-item1::before,
+.advantage2:checked ~ .slider-controls .slider-controls-item2::before,
+.advantage3:checked ~ .slider-controls .slider-controls-item3::before {
     content: "";
     position: absolute;
     left: 50%;
