@@ -75,7 +75,6 @@ if(form != undefined){
 	var inputs = form.querySelectorAll("input[required]");
 	for(var i = 0; i < inputs.length; i++){
 		inputs[i].oninput = function(){
-			//console.log(this)
 			if(this.name == "your-email"){
 				if(this.value.length > 7){
 					if(re.test(this.value)){
