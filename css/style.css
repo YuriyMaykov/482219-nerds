@@ -901,7 +901,7 @@ ul {
 }
 
 .main-footer iframe {
-    width: 100%;
+    width: auto;
     height: 415px;
     position: absolute;
     z-index: 1;
