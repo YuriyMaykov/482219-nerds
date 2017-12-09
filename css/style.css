@@ -1147,10 +1147,10 @@ ul {
     border-color: #000000;
 }
 
-.input-field:invalid {
+/* .input-field:invalid {
     color: #e74246;
     border-color: #e74246;
-}
+} */
 
 
 /******************************/
@@ -1526,7 +1526,7 @@ ul {
     opacity: 1;
 }
 
-.invalid {
+.error{
     color: #e74246;
     border-color: #e74246;
 }
@@ -1562,7 +1562,6 @@ ul {
     }
 }
 
-
 @keyframes shake {
     0%,
     100% {
@@ -1589,7 +1588,6 @@ ul {
     animation: bounce 0.6s ease;
 }
 
-  
 .modal-error {
     animation: shake 0.6s;
 }
