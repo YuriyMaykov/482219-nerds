@@ -304,7 +304,7 @@ input[type="radio"].visually-hidden {
   list-style-image: url('../img/marker.svg');
 }
 
-.nerds-illustr {
+.illustration {
   width: 360px;
   height: 208px;
   background-image: url("..//img/nerds-illustration.png");
@@ -855,7 +855,7 @@ input[type="radio"].visually-hidden {
           align-items: center;
 }
 
-.nerds-illustr {
+.illustration {
   margin-bottom: 37px;
 }
 
@@ -877,6 +877,7 @@ input[type="radio"].visually-hidden {
 .element--parent {
 list-style-type: none;
 margin: 0;
+margin-left: 30px;
 padding: 0;
 display: -webkit-box;
 display: -ms-flexbox;
@@ -887,9 +888,6 @@ min-height: 180px;
     flex-wrap: wrap;
 -ms-flex-pack: distribute;
     justify-content: space-around;
--webkit-box-align: center;
-    -ms-flex-align: center;
-        align-items: center;
 }
 
 .element {
@@ -901,9 +899,7 @@ align-items: center;
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
--webkit-box-pack: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+flex-basis: calc(100%/4);
 }
 
 .element::after {
@@ -913,12 +909,16 @@ height: 50px;
 background-color: #eeeeee;
 display: block;
 position: absolute;
-right: -46px;
+right: 30px;
 top: -8px;
 bottom: 0;
 margin: auto 0;
 }
 
+.element:nth-child(4n+4)::after {
+  content: none;
+  }
+  
 .element:last-child::after {
 content: none;
 }
