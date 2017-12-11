@@ -101,8 +101,7 @@ ul {
   min-height: 50px;
   border: none;
   border-radius: 2px;
-  font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 50px;
   text-align: center;
@@ -158,7 +157,6 @@ ul {
 .saite-navigation a,
 .basket a {
   display: block;
-  font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
@@ -223,7 +221,6 @@ ul {
 }
 
 .slider-list h3 {
-  font-family: "Roboto Medium", "Roboto", Arial, sans-serif;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -232,7 +229,6 @@ ul {
   text-transform: none;
 }
 .slider-list p {
-  font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -241,7 +237,6 @@ ul {
 }
 
 .order-apps h3 {
-  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -253,7 +248,6 @@ ul {
 .principles p,
 .principles-left li,
 .row2 {
-  font-family: "Roboto Regular", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -262,7 +256,6 @@ ul {
 }
 
 .row1 li {
-  font-family: Roboto, Arial, sans-serif;
   font-weight: 700;
   font-size: 45px;
   line-height: 17px;
@@ -293,17 +286,15 @@ ul {
 }
 
 .principles h2 {
-  font-family: "Roboto Medium", Arial, sans-serif;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
   background-color: transparent;
   text-transform: none;
 }
 
 .principles h3 {
-  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -342,7 +333,6 @@ ul {
 }
 
 .contakts h3 {
-  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -352,7 +342,6 @@ ul {
 
 .contakts p,
 .contakts .phone  {
-  font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
@@ -362,7 +351,6 @@ ul {
 }
 
 .discounts h2 {
-  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -372,7 +360,6 @@ ul {
 }
 
 .discounts p {
-  font-family: "Roboto Regular", "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
@@ -441,7 +428,6 @@ ul {
 }
 
 .filter-form legend {
-  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -452,7 +438,6 @@ ul {
 .grid-flt .label,
 .features-flt .label {
   display: inline;
-  font-family: "Roboto Regular", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #283136;
@@ -529,7 +514,6 @@ ul {
   display: inline-block;
 }
 .orderby h2 {
-  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -538,7 +522,6 @@ ul {
 }
 
 .orderby a {
-  font-family: "Roboto Regular", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -558,10 +541,9 @@ ul {
 .page2 {
   display: inline-block;
   width: 100%;
-  font-family: "Roboto Medium", Arial, sans-serif;
   font-size: 55px;
   line-height: 55px;
-  font-weight: normal;
+  font-weight: 500;
   text-transform: none;
   text-align: center;
   color: #000000;
@@ -573,7 +555,6 @@ ul {
 }
   
 .catalog-item .catalog-item-title {
-  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -582,7 +563,6 @@ ul {
 }
 
 .catalog-item .catalog-category {
-  font-family: "Roboto Regular", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
@@ -591,7 +571,7 @@ ul {
 }
 
 .page-number a {
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #000000;
@@ -964,7 +944,7 @@ content: none;
   width: 318px;
   position: absolute;
   z-index: 2;
-  margin-top: 60px;
+  margin-top: 52px;
   background-color: #ffffff;
   padding: 32px 49px 40px 49px;
 }
@@ -1156,7 +1136,7 @@ content: none;
 }    
 
 .form-contact h2 {
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   text-transform: none;
@@ -1167,7 +1147,6 @@ content: none;
 
 
 .contact-us label {
-  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -1189,7 +1168,6 @@ content: none;
   height: 50px;
   border: 2px solid #d7dcde;
   border-radius: 2px;
-  font-family: "Roboto Regular", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #a1a1a1;
@@ -1226,10 +1204,9 @@ content: none;
 }
 
 .title-text h1 {
-  font-family: "Roboto Medium", Arial, sans-serif;
   font-size: 55px;
   line-height: 55px;
-  font-weight: 400px;
+  font-weight: 500px;
   text-transform: none;
   text-align: center;
 }
@@ -1323,8 +1300,8 @@ content: none;
   width: 60px;
   padding: 8px 10px;
   margin-left: 10px;
-  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
+  line-height: 22px;
   text-align: center;
   color: #283136;
   border: none;
@@ -1614,7 +1591,7 @@ content: none;
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 50px;
   color: #000000;
