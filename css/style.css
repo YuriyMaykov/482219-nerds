@@ -996,19 +996,12 @@ content: none;
   position: absolute;
   background-image: url(../img/sn-vk-1.png);
   background-repeat: no-repeat;  
-  -webkit-transition: background-image 350ms ease, -webkit-transform 350ms ease;  
-  transition: background-image 350ms ease, -webkit-transform 350ms ease;  
-  -o-transition: transform 350ms ease, background-image 350ms ease;  
-  transition: transform 350ms ease, background-image 350ms ease;  
-  transition: transform 350ms ease, background-image 350ms ease, -webkit-transform 350ms ease;
+  transition: background-image 350ms ease;  
 }
 
 .social-network a:nth-child(1):hover>.icon--vk::before, 
 .social-network a:nth-child(1):focus>.icon--vk::before {
   background-image: url(../img/sn-vk-2.png);
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 
 .social-network a:nth-child(1):active>.icon--vk::before {
@@ -1022,19 +1015,12 @@ content: none;
   position: absolute;
   background-image: url(../img/sn-fb-1.png);
   background-repeat: no-repeat;  
-  -webkit-transition: background-image 350ms ease, -webkit-transform 350ms ease;  
-  transition: background-image 350ms ease, -webkit-transform 350ms ease;  
-  -o-transition: transform 350ms ease, background-image 350ms ease;  
-  transition: transform 350ms ease, background-image 350ms ease;  
-  transition: transform 350ms ease, background-image 350ms ease, -webkit-transform 350ms ease;
+  transition: background-image 350ms ease;  
 }
 
 .social-network a:nth-child(2):hover>.icon--fb::before, 
 .social-network a:nth-child(2):focus>.icon--fb::before {
   background-image: url(../img/sn-fb-2.png);
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 
 .social-network a:nth-child(2):active>.icon--fb::before {
@@ -1048,19 +1034,12 @@ content: none;
   position: absolute;
   background-image: url(../img/sn-ig-1.png);
   background-repeat: no-repeat;  
-  -webkit-transition: background-image 350ms ease, -webkit-transform 350ms ease;  
-  transition: background-image 350ms ease, -webkit-transform 350ms ease;  
-  -o-transition: transform 350ms ease, background-image 350ms ease;  
-  transition: transform 350ms ease, background-image 350ms ease;  
-  transition: transform 350ms ease, background-image 350ms ease, -webkit-transform 350ms ease;
+  transition: background-image 350ms ease;  
 }
 
 .social-network a:nth-child(3):hover>.icon--ig::before, 
 .social-network a:nth-child(3):focus>.icon--ig::before {
   background-image: url(../img/sn-ig-2.png);
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 
 .social-network a:nth-child(3):active>.icon--ig::before {
