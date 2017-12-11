@@ -940,6 +940,10 @@ content: none;
 .contakts {
   width: 100%;
   height: 415px;
+}
+
+.contakts .container {
+  height: 100%;
   position: relative;
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
@@ -954,15 +958,14 @@ content: none;
   border: none;
 }
 
-
 .contakts-adres {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 318px;
   position: absolute;
   z-index: 2;
-  margin-top: 53px;
-  margin-left: 33px;    background-color: #ffffff;
+  margin-top: 60px;
+  background-color: #ffffff;
   padding: 32px 49px 40px 49px;
 }
 
