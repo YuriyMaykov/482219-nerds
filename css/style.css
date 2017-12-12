@@ -22,7 +22,7 @@ img {
   height: auto;
 }
 
-.contacts-address {
+.contacts-address address {
   font-style: normal;
 }
 
@@ -344,7 +344,7 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
-.contacts p,
+.contacts address,
 .contacts .phone  {
   font-size: 16px;
   line-height: 18px;
@@ -989,7 +989,7 @@ content: none;
   margin-bottom: 23px;
 }
 
-.contacts-address>p {
+.contacts-address address {
   margin-bottom: 17px;
 }
 
