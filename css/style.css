@@ -812,11 +812,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 49px;
 }
 
-.principles-left, .principles-right {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .principles-left {
   max-width: 700px;
   padding-top: 34px;
